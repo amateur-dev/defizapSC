@@ -89,13 +89,13 @@ contract ServiceProvider_UniSwap_ETH_DAI_Zap is Ownable, ReentrancyGuard {
         uint residualDAIHoldings = DAI_TOKEN_ADDRESS.balanceOf(address(this));
 
         // Adjusting for ServiceCharge
-        uint ServiceCharegeTokens = SafeMath.div(SafeMath.mul(DAILiquidityTokens,serviceChargeInBasisPoints),10000);
+        uint ServiceChargeTokens = SafeMath.div(SafeMath.mul(DAILiquidityTokens,serviceChargeInBasisPoints),10000);
         // Transfering of the ServiceChargeTokens
-        require(UniSwapDAIContract.transfer(ServiceProviderAddress, ServiceCharegeTokens), "Failure to send ServiceChargeTokens");
-        emit ServiceChargeTokensTransferred(ServiceCharegeTokens);
+        require(UniSwapDAIContract.transfer(ServiceProviderAddress, ServiceChargeTokens), "Failure to send ServiceChargeTokens");
+        emit ServiceChargeTokensTransferred(ServiceChargeTokens);
 
         // Sending Back the Balance LiquityTokens and residual DAI Tokens to user
-        uint UserLiquidityTokens = SafeMath.sub(DAILiquidityTokens,ServiceCharegeTokens);
+        uint UserLiquidityTokens = SafeMath.sub(DAILiquidityTokens,ServiceChargeTokens);
         require(UniSwapDAIContract.transfer(msg.sender, UserLiquidityTokens), "Failure to send Liquidity Tokens to User");
         require(DAI_TOKEN_ADDRESS.transfer(msg.sender, residualDAIHoldings), "Failure to send residual DAI holdings");
         emit TransferredToUser_liquidityTokens_residualDAI(UserLiquidityTokens, residualDAIHoldings);

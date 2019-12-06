@@ -5,36 +5,39 @@ import "./OpenZepplinReentrancyGuard.sol";
 import "./OpenZepplinSafeMath.sol";
 
 
+interface Invest2FulcrumiDAI_NEW {
+    function LetsInvest(address _towhomtoissue) external payable;
+}
+
 interface Invest2cDAI_NEW {
     function LetsInvest(address _towhomtoissue) external payable;
 }
 
-interface Invest2Fulcrum {
-    function LetsInvest2Fulcrum(address _towhomtoissue) external payable;
-}
-
-
-// through this contract we are putting UserProvided allocation to cDAI and to 2xLongETH
-contract SafeNotSorryZapV2 is Ownable, ReentrancyGuard {
+contract SuperSaverZapV2 is Ownable, ReentrancyGuard {
     using SafeMath for uint;
-    
-    // state variables
-    
-    
+
     // - variables in relation to the percentages
-    Invest2Fulcrum public Invest2FulcrumContract = Invest2Fulcrum(0xAB58BBF6B6ca1B064aa59113AeA204F554E8fBAe);
+    uint public cDAI_NEWPercentage;
     Invest2cDAI_NEW public Invest2cDAI_NEWContract = Invest2cDAI_NEW(0x1FE91B5D531620643cADcAcc9C3bA83097c1B698);
-    
+    Invest2FulcrumiDAI_NEW public Invest2FulcrumiDAI_NEWContract = Invest2FulcrumiDAI_NEW(0x84759d8e263cc1Aa9042ff316F0fD148A7C5cb12);
+
     
     // - in relation to the ETH held by this contract
     uint public balance = address(this).balance;
     
     // - in relation to the emergency functioning of this contract
     bool private stopped = false;
+
     
+    // circuit breaker modifiers
+    modifier stopInEmergency {if (!stopped) _;}
+    modifier onlyInEmergency {if (stopped) _;}
+    
+ 
+
     // this function should be called should we ever want to change the underlying Fulcrum Long ETHContract address
-    function set_Invest2FulcrumContract (Invest2Fulcrum _Invest2FulcrumContract) onlyOwner public {
-        Invest2FulcrumContract = _Invest2FulcrumContract;
+    function set_Invest2FulcrumiDAI_NEWContract (Invest2FulcrumiDAI_NEW _Invest2FulcrumiDAI_NEWContract) onlyOwner public {
+        Invest2FulcrumiDAI_NEWContract = _Invest2FulcrumiDAI_NEWContract;
     }
     
     // this function should be called should we ever want to change the underlying Fulcrum Long ETHContract address
@@ -42,25 +45,20 @@ contract SafeNotSorryZapV2 is Ownable, ReentrancyGuard {
         Invest2cDAI_NEWContract = _Invest2cDAI_NEWContract;
     }
     
-    // circuit breaker modifiers
-    modifier stopInEmergency {if (!stopped) _;}
-    modifier onlyInEmergency {if (stopped) _;}
-
-    
-    function toggleContractActive() onlyOwner public {
-    stopped = !stopped;
-    }
-
+    // main function which will make the investments
     function LetsInvest(uint _allocationToCDAI_new) stopInEmergency nonReentrant payable public returns (bool) {
-        uint investment_amt = msg.value;
-        uint investAmt2cDAI_NEW = SafeMath.div(SafeMath.mul(investment_amt,_allocationToCDAI_new), 100);
-        uint investAmt2cFulcrum = SafeMath.sub(investment_amt, investAmt2cDAI_NEW);
-        require (SafeMath.sub(investment_amt,SafeMath.add(investAmt2cDAI_NEW, investAmt2cFulcrum)) == 0);
-        Invest2cDAI_NEWContract.LetsInvest.value(investAmt2cDAI_NEW)(msg.sender);
-        Invest2FulcrumContract.LetsInvest2Fulcrum.value(investAmt2cFulcrum)(msg.sender);
+        require (msg.value > 100000000000000);
+        uint invest_amt = msg.value;
+        uint cDAI_NEWPortion = SafeMath.div(SafeMath.mul(invest_amt,_allocationToCDAI_new),100);
+        uint iDAI_NEWPortion = SafeMath.sub(invest_amt, cDAI_NEWPortion);
+        require (SafeMath.sub(invest_amt, SafeMath.add(cDAI_NEWPortion, iDAI_NEWPortion)) ==0 );
+        Invest2cDAI_NEWContract.LetsInvest.value(cDAI_NEWPortion)(msg.sender);
+        Invest2FulcrumiDAI_NEWContract.LetsInvest.value(iDAI_NEWPortion)(msg.sender);
         return true;
-        
     }
+    
+    // fx in relation to ETH held by the contract sent by the owner
+    
     // - this function lets you deposit ETH into this wallet
     function depositETH() payable public onlyOwner returns (uint) {
         balance += msg.value;
@@ -71,7 +69,7 @@ contract SafeNotSorryZapV2 is Ownable, ReentrancyGuard {
         if (msg.sender == _owner) {
             depositETH();
         } else {
-            LetsInvest(90);
+            LetsInvest(50);
         }
     }
     
@@ -80,5 +78,4 @@ contract SafeNotSorryZapV2 is Ownable, ReentrancyGuard {
         _owner.transfer(address(this).balance);
     }
     
-
 }
