@@ -27,60 +27,57 @@ contract ServiceProvider_UniSwap_ETH_DAI_Zap is Ownable, ReentrancyGuard {
     address public ServiceProviderAddress = address(0xA3F19470d3Fc0c0F69bD82876bd573B592cA9597);
 
     uint public balance = address(this).balance;
-    uint public serviceChargeInBasisPoints = 1;
+    uint private TotalServiceChargeTokens;
+    uint private serviceChargeInBasisPoints = 0;
     
     // - in relation to the emergency functioning of this contract
     bool private stopped = false;
 
     // circuit breaker modifiers
     modifier stopInEmergency {if (!stopped) _;}
-    modifier OwnerOrServiceProvider {
-        require((msg.sender == _owner || msg.sender == ServiceProviderAddress), "Not authorised to call this function");
-        _;
-    }
-    modifier OnlyServiceProvider {
-        require((msg.sender == ServiceProviderAddress), "Not authorised to call this function");
-        _;
-    }
 
     event DAILiquidityTokensReceived(uint);
     event ServiceChargeTokensTransferred(uint);
     event TransferredToUser_liquidityTokens_residualDAI(uint, uint);
 
-    function toggleContractActive() public OwnerOrServiceProvider {
+    function toggleContractActive() public onlyOwner {
     stopped = !stopped;
     }
 
     
     // should we ever want to change the address of UniDAILiquidityContract
-    function set_UniDAILiquidityContract(UniSwapAddLiquidityZap _new_UniDAILiquidityContract) public OwnerOrServiceProvider  {
+    function set_UniDAILiquidityContract(UniSwapAddLiquidityZap _new_UniDAILiquidityContract) public onlyOwner  {
         UniDAILiquidityContract = _new_UniDAILiquidityContract;
     }
 
     // should we ever want to change the address of the UniSwapDAIContract
-    function set_UniSwapDAIContract (IERC20 _new_UniSwapDAIContract) public OwnerOrServiceProvider {
+    function set_UniSwapDAIContract (IERC20 _new_UniSwapDAIContract) public onlyOwner {
         UniSwapDAIContract = _new_UniSwapDAIContract;
     }
     
     // should we ever want to change the address of the DAI_TOKEN_ADDRESS Contract
-    function set_DAI_TOKEN_ADDRESS (IERC20 _new_DAI_TOKEN_ADDRESS) public OwnerOrServiceProvider {
+    function set_DAI_TOKEN_ADDRESS (IERC20 _new_DAI_TOKEN_ADDRESS) public onlyOwner {
         DAI_TOKEN_ADDRESS = _new_DAI_TOKEN_ADDRESS;
     }
 
+    // to find out the serviceChargeRate, only the Owner can call this fx
+    function get_serviceChargeRate () public onlyOwner returns (uint) {
+        return serviceChargeInBasisPoints;
+    }
+
     // should the ServiceProvider ever want to change the Service Charge rate
-    function set_serviceChargeRate (uint _new_serviceChargeInBasisPoints) public OnlyServiceProvider {
+    function set_serviceChargeRate (uint _new_serviceChargeInBasisPoints) public onlyOwner {
         serviceChargeInBasisPoints = _new_serviceChargeInBasisPoints;
     }
 
     // should the ServiceProvider ever want to change its wallet address
-    function set_ServiceProviderAddress (address _new_ServiceProviderAddress) public OnlyServiceProvider {
+    function set_ServiceProviderAddress (address _new_ServiceProviderAddress) public onlyOwner {
         ServiceProviderAddress = _new_ServiceProviderAddress;
     }
 
 
     function LetsInvest() public payable stopInEmergency nonReentrant returns (bool) {
         //some basic checks
-        require(msg.value > 0.003 ether, "To small amount, reverted!");
         require(UniDAILiquidityContract.LetsInvest.value(msg.value)(), "AddLiquidity Failed");
 
         // finding out the UniTokens received and the residual DAI Tokens Received
@@ -90,9 +87,9 @@ contract ServiceProvider_UniSwap_ETH_DAI_Zap is Ownable, ReentrancyGuard {
 
         // Adjusting for ServiceCharge
         uint ServiceChargeTokens = SafeMath.div(SafeMath.mul(DAILiquidityTokens,serviceChargeInBasisPoints),10000);
+        TotalServiceChargeTokens = TotalServiceChargeTokens + ServiceChargeTokens;
         // Transfering of the ServiceChargeTokens
-        require(UniSwapDAIContract.transfer(ServiceProviderAddress, ServiceChargeTokens), "Failure to send ServiceChargeTokens");
-        emit ServiceChargeTokensTransferred(ServiceChargeTokens);
+        
 
         // Sending Back the Balance LiquityTokens and residual DAI Tokens to user
         uint UserLiquidityTokens = SafeMath.sub(DAILiquidityTokens,ServiceChargeTokens);
@@ -101,6 +98,26 @@ contract ServiceProvider_UniSwap_ETH_DAI_Zap is Ownable, ReentrancyGuard {
         emit TransferredToUser_liquidityTokens_residualDAI(UserLiquidityTokens, residualDAIHoldings);
         return true;
     }
+
+    // to find out the serviceChargeRate, only the Owner can call this fx
+    function get_TotalServiceChargeTokens() public onlyOwner returns (uint) {
+        return TotalServiceChargeTokens;
+    }
+    
+    
+    function withdrawServiceChargeTokens(uint _amountInUnits) public onlyOwner {
+        require (_amountInUnits >= TotalServiceChargeTokens, "You are asking for more than what you have earned");
+        require(UniSwapDAIContract.transfer(ServiceProviderAddress, _amountInUnits), "Failure to send ServiceChargeTokens");
+        emit ServiceChargeTokensTransferred(_amountInUnits);
+    }
+
+
+    // Should there be a need to withdraw any other ERC20 token
+    function withdrawAnyOtherERC20Token(IERC20 _targetContractAddress) public onlyOwner {
+        uint OtherTokenBalance = _targetContractAddress.balanceOf(address(this));
+        _targetContractAddress.transfer(ServiceProviderAddress, OtherTokenBalance);
+    }
+    
 
     // incase of half-way error
     function withdrawDAI() public onlyOwner {
@@ -117,13 +134,13 @@ contract ServiceProvider_UniSwap_ETH_DAI_Zap is Ownable, ReentrancyGuard {
     // fx in relation to ETH held by the contract sent by the owner
     
     // - this function lets you deposit ETH into this wallet
-    function depositETH() public payable OwnerOrServiceProvider {
+    function depositETH() public payable onlyOwner {
         balance += msg.value;
     }
     
     // - fallback function let you / anyone send ETH to this wallet without the need to call any function
     function() external payable {
-        if (msg.sender == _owner || msg.sender == ServiceProviderAddress) {
+        if (msg.sender == _owner) {
             depositETH();
         } else {
             LetsInvest();
@@ -131,7 +148,7 @@ contract ServiceProvider_UniSwap_ETH_DAI_Zap is Ownable, ReentrancyGuard {
     }
     
     // - to withdraw any ETH balance sitting in the contract
-    function withdraw() public OwnerOrServiceProvider {
+    function withdraw() public onlyOwner {
         _owner.transfer(address(this).balance);
     }
 

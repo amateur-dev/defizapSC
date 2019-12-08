@@ -1248,7 +1248,7 @@
         "id": 1728,
         "nodeType": "ImportDirective",
         "scope": 1943,
-        "sourceUnit": 4306,
+        "sourceUnit": 4329,
         "src": "943:31:7",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1259,7 +1259,7 @@
         "id": 1729,
         "nodeType": "ImportDirective",
         "scope": 1943,
-        "sourceUnit": 4439,
+        "sourceUnit": 4462,
         "src": "975:24:7",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1291,10 +1291,10 @@
               "id": 1732,
               "name": "ReentrancyGuard",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4305,
+              "referencedDeclaration": 4328,
               "src": "1042:15:7",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ReentrancyGuard_$4305",
+                "typeIdentifier": "t_contract$_ReentrancyGuard_$4328",
                 "typeString": "contract ReentrancyGuard"
               }
             },
@@ -1305,7 +1305,7 @@
         ],
         "contractDependencies": [
           3895,
-          4305
+          4328
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -1313,7 +1313,7 @@
         "id": 1942,
         "linearizedBaseContracts": [
           1942,
-          4305,
+          4328,
           3895
         ],
         "name": "Invest2Fulcrum_iDAI",
@@ -1326,10 +1326,10 @@
               "id": 1734,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4438,
+              "referencedDeclaration": 4461,
               "src": "1070:8:7",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$4438",
+                "typeIdentifier": "t_contract$_SafeMath_$4461",
                 "typeString": "library SafeMath"
               }
             },
@@ -2259,10 +2259,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8807,
-                        8808
+                        8976,
+                        8977
                       ],
-                      "referencedDeclaration": 8807,
+                      "referencedDeclaration": 8976,
                       "src": "2494:7:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -2310,7 +2310,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8804,
+                            "referencedDeclaration": 8973,
                             "src": "2549:3:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -2369,10 +2369,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8807,
-                        8808
+                        8976,
+                        8977
                       ],
-                      "referencedDeclaration": 8807,
+                      "referencedDeclaration": 8976,
                       "src": "2541:7:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -2512,7 +2512,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8804,
+                            "referencedDeclaration": 8973,
                             "src": "2708:3:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -2683,7 +2683,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8804,
+                            "referencedDeclaration": 8973,
                             "src": "2795:3:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -2871,10 +2871,10 @@
                         "name": "SafeMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4438,
+                        "referencedDeclaration": 4461,
                         "src": "2872:8:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_SafeMath_$4438_$",
+                          "typeIdentifier": "t_type$_t_contract$_SafeMath_$4461_$",
                           "typeString": "type(library SafeMath)"
                         }
                       },
@@ -2885,7 +2885,7 @@
                       "lValueRequested": false,
                       "memberName": "mul",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4391,
+                      "referencedDeclaration": 4414,
                       "src": "2872:12:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
@@ -3045,10 +3045,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8807,
-                        8808
+                        8976,
+                        8977
                       ],
-                      "referencedDeclaration": 8807,
+                      "referencedDeclaration": 8976,
                       "src": "2909:7:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -3266,7 +3266,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8876,
+                            "referencedDeclaration": 9031,
                             "src": "3251:4:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_Invest2Fulcrum_iDAI_$1942",
@@ -3531,7 +3531,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8804,
+                        "referencedDeclaration": 8973,
                         "src": "3540:3:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -3662,7 +3662,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8804,
+                        "referencedDeclaration": 8973,
                         "src": "3714:3:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -3721,7 +3721,7 @@
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 8804,
+                                "referencedDeclaration": 8973,
                                 "src": "3815:3:7",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_message",
@@ -3875,7 +3875,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8876,
+                              "referencedDeclaration": 9031,
                               "src": "3983:4:7",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_Invest2Fulcrum_iDAI_$1942",
@@ -5056,7 +5056,7 @@
         "id": 1728,
         "nodeType": "ImportDirective",
         "scope": 1943,
-        "sourceUnit": 4306,
+        "sourceUnit": 4329,
         "src": "943:31:7",
         "symbolAliases": [],
         "unitAlias": ""
@@ -5067,7 +5067,7 @@
         "id": 1729,
         "nodeType": "ImportDirective",
         "scope": 1943,
-        "sourceUnit": 4439,
+        "sourceUnit": 4462,
         "src": "975:24:7",
         "symbolAliases": [],
         "unitAlias": ""
@@ -5099,10 +5099,10 @@
               "id": 1732,
               "name": "ReentrancyGuard",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4305,
+              "referencedDeclaration": 4328,
               "src": "1042:15:7",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ReentrancyGuard_$4305",
+                "typeIdentifier": "t_contract$_ReentrancyGuard_$4328",
                 "typeString": "contract ReentrancyGuard"
               }
             },
@@ -5113,7 +5113,7 @@
         ],
         "contractDependencies": [
           3895,
-          4305
+          4328
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -5121,7 +5121,7 @@
         "id": 1942,
         "linearizedBaseContracts": [
           1942,
-          4305,
+          4328,
           3895
         ],
         "name": "Invest2Fulcrum_iDAI",
@@ -5134,10 +5134,10 @@
               "id": 1734,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4438,
+              "referencedDeclaration": 4461,
               "src": "1070:8:7",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$4438",
+                "typeIdentifier": "t_contract$_SafeMath_$4461",
                 "typeString": "library SafeMath"
               }
             },
@@ -6067,10 +6067,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8807,
-                        8808
+                        8976,
+                        8977
                       ],
-                      "referencedDeclaration": 8807,
+                      "referencedDeclaration": 8976,
                       "src": "2494:7:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -6118,7 +6118,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8804,
+                            "referencedDeclaration": 8973,
                             "src": "2549:3:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -6177,10 +6177,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8807,
-                        8808
+                        8976,
+                        8977
                       ],
-                      "referencedDeclaration": 8807,
+                      "referencedDeclaration": 8976,
                       "src": "2541:7:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -6320,7 +6320,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8804,
+                            "referencedDeclaration": 8973,
                             "src": "2708:3:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -6491,7 +6491,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8804,
+                            "referencedDeclaration": 8973,
                             "src": "2795:3:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -6679,10 +6679,10 @@
                         "name": "SafeMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4438,
+                        "referencedDeclaration": 4461,
                         "src": "2872:8:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_SafeMath_$4438_$",
+                          "typeIdentifier": "t_type$_t_contract$_SafeMath_$4461_$",
                           "typeString": "type(library SafeMath)"
                         }
                       },
@@ -6693,7 +6693,7 @@
                       "lValueRequested": false,
                       "memberName": "mul",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4391,
+                      "referencedDeclaration": 4414,
                       "src": "2872:12:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
@@ -6853,10 +6853,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8807,
-                        8808
+                        8976,
+                        8977
                       ],
-                      "referencedDeclaration": 8807,
+                      "referencedDeclaration": 8976,
                       "src": "2909:7:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -7074,7 +7074,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8876,
+                            "referencedDeclaration": 9031,
                             "src": "3251:4:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_Invest2Fulcrum_iDAI_$1942",
@@ -7339,7 +7339,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8804,
+                        "referencedDeclaration": 8973,
                         "src": "3540:3:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -7470,7 +7470,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8804,
+                        "referencedDeclaration": 8973,
                         "src": "3714:3:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -7529,7 +7529,7 @@
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 8804,
+                                "referencedDeclaration": 8973,
                                 "src": "3815:3:7",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_message",
@@ -7683,7 +7683,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8876,
+                              "referencedDeclaration": 9031,
                               "src": "3983:4:7",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_Invest2Fulcrum_iDAI_$1942",
@@ -7852,7 +7852,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-12-06T05:55:54.909Z",
+  "updatedAt": "2019-12-06T10:22:27.371Z",
   "devdoc": {
     "methods": {}
   },

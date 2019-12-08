@@ -27,20 +27,20 @@
     "absolutePath": "/Users/dipeshsukhani/Desktop/Coding/DockerMounting/Python/allFolders/RemixSharedFolder/contracts/SuperSaverZapV2_NewDAI.sol",
     "exportedSymbols": {
       "Invest2FulcrumiDAI_NEW": [
-        5097
+        5120
       ],
       "Invest2cDAI_NEW": [
-        5103
+        5126
       ],
       "SuperSaverZapV2": [
-        5297
+        5320
       ]
     },
-    "id": 5298,
+    "id": 5321,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 5088,
+        "id": 5111,
         "literals": [
           "solidity",
           "^",
@@ -53,9 +53,9 @@
       {
         "absolutePath": "/Users/dipeshsukhani/Desktop/Coding/DockerMounting/Python/allFolders/RemixSharedFolder/contracts/OpenZepplinOwnable.sol",
         "file": "./OpenZepplinOwnable.sol",
-        "id": 5089,
+        "id": 5112,
         "nodeType": "ImportDirective",
-        "scope": 5298,
+        "scope": 5321,
         "sourceUnit": 3634,
         "src": "25:34:25",
         "symbolAliases": [],
@@ -64,9 +64,9 @@
       {
         "absolutePath": "/Users/dipeshsukhani/Desktop/Coding/DockerMounting/Python/allFolders/RemixSharedFolder/contracts/OpenZepplinReentrancyGuard.sol",
         "file": "./OpenZepplinReentrancyGuard.sol",
-        "id": 5090,
+        "id": 5113,
         "nodeType": "ImportDirective",
-        "scope": 5298,
+        "scope": 5321,
         "sourceUnit": 3664,
         "src": "60:42:25",
         "symbolAliases": [],
@@ -75,9 +75,9 @@
       {
         "absolutePath": "/Users/dipeshsukhani/Desktop/Coding/DockerMounting/Python/allFolders/RemixSharedFolder/contracts/OpenZepplinSafeMath.sol",
         "file": "./OpenZepplinSafeMath.sol",
-        "id": 5091,
+        "id": 5114,
         "nodeType": "ImportDirective",
-        "scope": 5298,
+        "scope": 5321,
         "sourceUnit": 3851,
         "src": "103:35:25",
         "symbolAliases": [],
@@ -89,9 +89,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 5097,
+        "id": 5120,
         "linearizedBaseContracts": [
-          5097
+          5120
         ],
         "name": "Invest2FulcrumiDAI_NEW",
         "nodeType": "ContractDefinition",
@@ -99,22 +99,22 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5096,
+            "id": 5119,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "LetsInvest",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5094,
+              "id": 5117,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5093,
+                  "id": 5116,
                   "name": "_towhomtoissue",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5096,
+                  "scope": 5119,
                   "src": "200:22:25",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -123,7 +123,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5092,
+                    "id": 5115,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "200:7:25",
@@ -140,19 +140,19 @@
               "src": "199:24:25"
             },
             "returnParameters": {
-              "id": 5095,
+              "id": 5118,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "240:0:25"
             },
-            "scope": 5097,
+            "scope": 5120,
             "src": "180:61:25",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 5298,
+        "scope": 5321,
         "src": "141:102:25"
       },
       {
@@ -161,9 +161,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 5103,
+        "id": 5126,
         "linearizedBaseContracts": [
-          5103
+          5126
         ],
         "name": "Invest2cDAI_NEW",
         "nodeType": "ContractDefinition",
@@ -171,22 +171,22 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5102,
+            "id": 5125,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "LetsInvest",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5100,
+              "id": 5123,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5099,
+                  "id": 5122,
                   "name": "_towhomtoissue",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5102,
+                  "scope": 5125,
                   "src": "297:22:25",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -195,7 +195,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5098,
+                    "id": 5121,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "297:7:25",
@@ -212,19 +212,19 @@
               "src": "296:24:25"
             },
             "returnParameters": {
-              "id": 5101,
+              "id": 5124,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "337:0:25"
             },
-            "scope": 5103,
+            "scope": 5126,
             "src": "277:61:25",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 5298,
+        "scope": 5321,
         "src": "245:95:25"
       },
       {
@@ -233,7 +233,7 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 5104,
+              "id": 5127,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 3633,
@@ -243,7 +243,7 @@
                 "typeString": "contract Ownable"
               }
             },
-            "id": 5105,
+            "id": 5128,
             "nodeType": "InheritanceSpecifier",
             "src": "370:7:25"
           },
@@ -251,7 +251,7 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 5106,
+              "id": 5129,
               "name": "ReentrancyGuard",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 3663,
@@ -261,7 +261,7 @@
                 "typeString": "contract ReentrancyGuard"
               }
             },
-            "id": 5107,
+            "id": 5130,
             "nodeType": "InheritanceSpecifier",
             "src": "379:15:25"
           }
@@ -274,9 +274,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 5297,
+        "id": 5320,
         "linearizedBaseContracts": [
-          5297,
+          5320,
           3663,
           3633,
           3518
@@ -285,10 +285,10 @@
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "id": 5110,
+            "id": 5133,
             "libraryName": {
               "contractScope": null,
-              "id": 5108,
+              "id": 5131,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 3850,
@@ -301,7 +301,7 @@
             "nodeType": "UsingForDirective",
             "src": "401:24:25",
             "typeName": {
-              "id": 5109,
+              "id": 5132,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "420:4:25",
@@ -313,10 +313,10 @@
           },
           {
             "constant": false,
-            "id": 5112,
+            "id": 5135,
             "name": "cDAI_NEWPercentage",
             "nodeType": "VariableDeclaration",
-            "scope": 5297,
+            "scope": 5320,
             "src": "481:30:25",
             "stateVariable": true,
             "storageLocation": "default",
@@ -325,7 +325,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 5111,
+              "id": 5134,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "481:4:25",
@@ -339,26 +339,26 @@
           },
           {
             "constant": false,
-            "id": 5117,
+            "id": 5140,
             "name": "Invest2cDAI_NEWContract",
             "nodeType": "VariableDeclaration",
-            "scope": 5297,
+            "scope": 5320,
             "src": "517:108:25",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5103",
+              "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5126",
               "typeString": "contract Invest2cDAI_NEW"
             },
             "typeName": {
               "contractScope": null,
-              "id": 5113,
+              "id": 5136,
               "name": "Invest2cDAI_NEW",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 5103,
+              "referencedDeclaration": 5126,
               "src": "517:15:25",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5103",
+                "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5126",
                 "typeString": "contract Invest2cDAI_NEW"
               }
             },
@@ -368,7 +368,7 @@
                 {
                   "argumentTypes": null,
                   "hexValue": "307831464539314235443533313632303634336341446341636339433362413833303937633142363938",
-                  "id": 5115,
+                  "id": 5138,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -391,18 +391,18 @@
                     "typeString": "address payable"
                   }
                 ],
-                "id": 5114,
+                "id": 5137,
                 "name": "Invest2cDAI_NEW",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
-                "referencedDeclaration": 5103,
+                "referencedDeclaration": 5126,
                 "src": "566:15:25",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_type$_t_contract$_Invest2cDAI_NEW_$5103_$",
+                  "typeIdentifier": "t_type$_t_contract$_Invest2cDAI_NEW_$5126_$",
                   "typeString": "type(contract Invest2cDAI_NEW)"
                 }
               },
-              "id": 5116,
+              "id": 5139,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -412,7 +412,7 @@
               "nodeType": "FunctionCall",
               "src": "566:59:25",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5103",
+                "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5126",
                 "typeString": "contract Invest2cDAI_NEW"
               }
             },
@@ -420,26 +420,26 @@
           },
           {
             "constant": false,
-            "id": 5122,
+            "id": 5145,
             "name": "Invest2FulcrumiDAI_NEWContract",
             "nodeType": "VariableDeclaration",
-            "scope": 5297,
+            "scope": 5320,
             "src": "631:129:25",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5097",
+              "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5120",
               "typeString": "contract Invest2FulcrumiDAI_NEW"
             },
             "typeName": {
               "contractScope": null,
-              "id": 5118,
+              "id": 5141,
               "name": "Invest2FulcrumiDAI_NEW",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 5097,
+              "referencedDeclaration": 5120,
               "src": "631:22:25",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5097",
+                "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5120",
                 "typeString": "contract Invest2FulcrumiDAI_NEW"
               }
             },
@@ -449,7 +449,7 @@
                 {
                   "argumentTypes": null,
                   "hexValue": "307838343735396438653236336363314161393034326666333136463066443134384137433563623132",
-                  "id": 5120,
+                  "id": 5143,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -472,18 +472,18 @@
                     "typeString": "address payable"
                   }
                 ],
-                "id": 5119,
+                "id": 5142,
                 "name": "Invest2FulcrumiDAI_NEW",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
-                "referencedDeclaration": 5097,
+                "referencedDeclaration": 5120,
                 "src": "694:22:25",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_type$_t_contract$_Invest2FulcrumiDAI_NEW_$5097_$",
+                  "typeIdentifier": "t_type$_t_contract$_Invest2FulcrumiDAI_NEW_$5120_$",
                   "typeString": "type(contract Invest2FulcrumiDAI_NEW)"
                 }
               },
-              "id": 5121,
+              "id": 5144,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -493,7 +493,7 @@
               "nodeType": "FunctionCall",
               "src": "694:66:25",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5097",
+                "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5120",
                 "typeString": "contract Invest2FulcrumiDAI_NEW"
               }
             },
@@ -501,10 +501,10 @@
           },
           {
             "constant": false,
-            "id": 5128,
+            "id": 5151,
             "name": "balance",
             "nodeType": "VariableDeclaration",
-            "scope": 5297,
+            "scope": 5320,
             "src": "826:43:25",
             "stateVariable": true,
             "storageLocation": "default",
@@ -513,7 +513,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 5123,
+              "id": 5146,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "826:4:25",
@@ -529,14 +529,14 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 5125,
+                    "id": 5148,
                     "name": "this",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8896,
+                    "referencedDeclaration": 9103,
                     "src": "856:4:25",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_SuperSaverZapV2_$5297",
+                      "typeIdentifier": "t_contract$_SuperSaverZapV2_$5320",
                       "typeString": "contract SuperSaverZapV2"
                     }
                   }
@@ -544,11 +544,11 @@
                 "expression": {
                   "argumentTypes": [
                     {
-                      "typeIdentifier": "t_contract$_SuperSaverZapV2_$5297",
+                      "typeIdentifier": "t_contract$_SuperSaverZapV2_$5320",
                       "typeString": "contract SuperSaverZapV2"
                     }
                   ],
-                  "id": 5124,
+                  "id": 5147,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -561,7 +561,7 @@
                   },
                   "typeName": "address"
                 },
-                "id": 5126,
+                "id": 5149,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": false,
@@ -575,7 +575,7 @@
                   "typeString": "address payable"
                 }
               },
-              "id": 5127,
+              "id": 5150,
               "isConstant": false,
               "isLValue": false,
               "isPure": false,
@@ -593,10 +593,10 @@
           },
           {
             "constant": false,
-            "id": 5131,
+            "id": 5154,
             "name": "stopped",
             "nodeType": "VariableDeclaration",
-            "scope": 5297,
+            "scope": 5320,
             "src": "947:28:25",
             "stateVariable": true,
             "storageLocation": "default",
@@ -605,7 +605,7 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 5129,
+              "id": 5152,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
               "src": "947:4:25",
@@ -617,7 +617,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "66616c7365",
-              "id": 5130,
+              "id": 5153,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -636,14 +636,14 @@
           },
           {
             "body": {
-              "id": 5137,
+              "id": 5160,
               "nodeType": "Block",
               "src": "1045:18:25",
               "statements": [
                 {
                   "condition": {
                     "argumentTypes": null,
-                    "id": 5134,
+                    "id": 5157,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -654,11 +654,11 @@
                     "src": "1050:8:25",
                     "subExpression": {
                       "argumentTypes": null,
-                      "id": 5133,
+                      "id": 5156,
                       "name": "stopped",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5131,
+                      "referencedDeclaration": 5154,
                       "src": "1051:7:25",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -671,11 +671,11 @@
                     }
                   },
                   "falseBody": null,
-                  "id": 5136,
+                  "id": 5159,
                   "nodeType": "IfStatement",
                   "src": "1046:15:25",
                   "trueBody": {
-                    "id": 5135,
+                    "id": 5158,
                     "nodeType": "PlaceholderStatement",
                     "src": "1060:1:25"
                   }
@@ -683,11 +683,11 @@
               ]
             },
             "documentation": null,
-            "id": 5138,
+            "id": 5161,
             "name": "stopInEmergency",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 5132,
+              "id": 5155,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1045:0:25"
@@ -697,18 +697,18 @@
           },
           {
             "body": {
-              "id": 5143,
+              "id": 5166,
               "nodeType": "Block",
               "src": "1093:17:25",
               "statements": [
                 {
                   "condition": {
                     "argumentTypes": null,
-                    "id": 5140,
+                    "id": 5163,
                     "name": "stopped",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 5131,
+                    "referencedDeclaration": 5154,
                     "src": "1098:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -716,11 +716,11 @@
                     }
                   },
                   "falseBody": null,
-                  "id": 5142,
+                  "id": 5165,
                   "nodeType": "IfStatement",
                   "src": "1094:14:25",
                   "trueBody": {
-                    "id": 5141,
+                    "id": 5164,
                     "nodeType": "PlaceholderStatement",
                     "src": "1107:1:25"
                   }
@@ -728,11 +728,11 @@
               ]
             },
             "documentation": null,
-            "id": 5144,
+            "id": 5167,
             "name": "onlyInEmergency",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 5139,
+              "id": 5162,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1093:0:25"
@@ -742,28 +742,28 @@
           },
           {
             "body": {
-              "id": 5155,
+              "id": 5178,
               "nodeType": "Block",
               "src": "1357:81:25",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 5153,
+                    "id": 5176,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 5151,
+                      "id": 5174,
                       "name": "Invest2FulcrumiDAI_NEWContract",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5122,
+                      "referencedDeclaration": 5145,
                       "src": "1367:30:25",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5097",
+                        "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5120",
                         "typeString": "contract Invest2FulcrumiDAI_NEW"
                       }
                     },
@@ -771,40 +771,40 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 5152,
+                      "id": 5175,
                       "name": "_Invest2FulcrumiDAI_NEWContract",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5146,
+                      "referencedDeclaration": 5169,
                       "src": "1400:31:25",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5097",
+                        "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5120",
                         "typeString": "contract Invest2FulcrumiDAI_NEW"
                       }
                     },
                     "src": "1367:64:25",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5097",
+                      "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5120",
                       "typeString": "contract Invest2FulcrumiDAI_NEW"
                     }
                   },
-                  "id": 5154,
+                  "id": 5177,
                   "nodeType": "ExpressionStatement",
                   "src": "1367:64:25"
                 }
               ]
             },
             "documentation": null,
-            "id": 5156,
+            "id": 5179,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 5149,
+                "id": 5172,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 5148,
+                  "id": 5171,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
@@ -822,31 +822,31 @@
             "name": "set_Invest2FulcrumiDAI_NEWContract",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5147,
+              "id": 5170,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5146,
+                  "id": 5169,
                   "name": "_Invest2FulcrumiDAI_NEWContract",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5156,
+                  "scope": 5179,
                   "src": "1284:54:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5097",
+                    "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5120",
                     "typeString": "contract Invest2FulcrumiDAI_NEW"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 5145,
+                    "id": 5168,
                     "name": "Invest2FulcrumiDAI_NEW",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5097,
+                    "referencedDeclaration": 5120,
                     "src": "1284:22:25",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5097",
+                      "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5120",
                       "typeString": "contract Invest2FulcrumiDAI_NEW"
                     }
                   },
@@ -857,12 +857,12 @@
               "src": "1283:56:25"
             },
             "returnParameters": {
-              "id": 5150,
+              "id": 5173,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1357:0:25"
             },
-            "scope": 5297,
+            "scope": 5320,
             "src": "1239:199:25",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -870,28 +870,28 @@
           },
           {
             "body": {
-              "id": 5167,
+              "id": 5190,
               "nodeType": "Block",
               "src": "1661:67:25",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 5165,
+                    "id": 5188,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 5163,
+                      "id": 5186,
                       "name": "Invest2cDAI_NEWContract",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5117,
+                      "referencedDeclaration": 5140,
                       "src": "1671:23:25",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5103",
+                        "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5126",
                         "typeString": "contract Invest2cDAI_NEW"
                       }
                     },
@@ -899,40 +899,40 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 5164,
+                      "id": 5187,
                       "name": "_Invest2cDAI_NEWContract",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5158,
+                      "referencedDeclaration": 5181,
                       "src": "1697:24:25",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5103",
+                        "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5126",
                         "typeString": "contract Invest2cDAI_NEW"
                       }
                     },
                     "src": "1671:50:25",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5103",
+                      "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5126",
                       "typeString": "contract Invest2cDAI_NEW"
                     }
                   },
-                  "id": 5166,
+                  "id": 5189,
                   "nodeType": "ExpressionStatement",
                   "src": "1671:50:25"
                 }
               ]
             },
             "documentation": null,
-            "id": 5168,
+            "id": 5191,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 5161,
+                "id": 5184,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 5160,
+                  "id": 5183,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
@@ -950,31 +950,31 @@
             "name": "set_Invest2cDAI_NEWContract",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5159,
+              "id": 5182,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5158,
+                  "id": 5181,
                   "name": "_Invest2cDAI_NEWContract",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5168,
+                  "scope": 5191,
                   "src": "1602:40:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5103",
+                    "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5126",
                     "typeString": "contract Invest2cDAI_NEW"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 5157,
+                    "id": 5180,
                     "name": "Invest2cDAI_NEW",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5103,
+                    "referencedDeclaration": 5126,
                     "src": "1602:15:25",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5103",
+                      "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5126",
                       "typeString": "contract Invest2cDAI_NEW"
                     }
                   },
@@ -985,12 +985,12 @@
               "src": "1601:42:25"
             },
             "returnParameters": {
-              "id": 5162,
+              "id": 5185,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1661:0:25"
             },
-            "scope": 5297,
+            "scope": 5320,
             "src": "1564:164:25",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -998,7 +998,7 @@
           },
           {
             "body": {
-              "id": 5249,
+              "id": 5272,
               "nodeType": "Block",
               "src": "1898:545:25",
               "statements": [
@@ -1012,7 +1012,7 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 5183,
+                        "id": 5206,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1021,18 +1021,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 5180,
+                            "id": 5203,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8804,
+                            "referencedDeclaration": 8973,
                             "src": "1917:3:25",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 5181,
+                          "id": 5204,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1051,7 +1051,7 @@
                         "rightExpression": {
                           "argumentTypes": null,
                           "hexValue": "313030303030303030303030303030",
-                          "id": 5182,
+                          "id": 5205,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1080,21 +1080,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 5179,
+                      "id": 5202,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8807,
-                        8808
+                        8976,
+                        8977
                       ],
-                      "referencedDeclaration": 8807,
+                      "referencedDeclaration": 8976,
                       "src": "1908:7:25",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 5184,
+                    "id": 5207,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1108,21 +1108,21 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5185,
+                  "id": 5208,
                   "nodeType": "ExpressionStatement",
                   "src": "1908:37:25"
                 },
                 {
                   "assignments": [
-                    5187
+                    5210
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 5187,
+                      "id": 5210,
                       "name": "invest_amt",
                       "nodeType": "VariableDeclaration",
-                      "scope": 5249,
+                      "scope": 5272,
                       "src": "1955:15:25",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -1131,7 +1131,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 5186,
+                        "id": 5209,
                         "name": "uint",
                         "nodeType": "ElementaryTypeName",
                         "src": "1955:4:25",
@@ -1144,23 +1144,23 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 5190,
+                  "id": 5213,
                   "initialValue": {
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 5188,
+                      "id": 5211,
                       "name": "msg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8804,
+                      "referencedDeclaration": 8973,
                       "src": "1973:3:25",
                       "typeDescriptions": {
                         "typeIdentifier": "t_magic_message",
                         "typeString": "msg"
                       }
                     },
-                    "id": 5189,
+                    "id": 5212,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1179,15 +1179,15 @@
                 },
                 {
                   "assignments": [
-                    5192
+                    5215
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 5192,
+                      "id": 5215,
                       "name": "cDAI_NEWPortion",
                       "nodeType": "VariableDeclaration",
-                      "scope": 5249,
+                      "scope": 5272,
                       "src": "1992:20:25",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -1196,7 +1196,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 5191,
+                        "id": 5214,
                         "name": "uint",
                         "nodeType": "ElementaryTypeName",
                         "src": "1992:4:25",
@@ -1209,7 +1209,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 5202,
+                  "id": 5225,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
@@ -1218,11 +1218,11 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 5197,
+                            "id": 5220,
                             "name": "invest_amt",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5187,
+                            "referencedDeclaration": 5210,
                             "src": "2041:10:25",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -1231,11 +1231,11 @@
                           },
                           {
                             "argumentTypes": null,
-                            "id": 5198,
+                            "id": 5221,
                             "name": "_allocationToCDAI_new",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5170,
+                            "referencedDeclaration": 5193,
                             "src": "2052:21:25",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -1256,7 +1256,7 @@
                           ],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 5195,
+                            "id": 5218,
                             "name": "SafeMath",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -1267,7 +1267,7 @@
                               "typeString": "type(library SafeMath)"
                             }
                           },
-                          "id": 5196,
+                          "id": 5219,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1281,7 +1281,7 @@
                             "typeString": "function (uint256,uint256) pure returns (uint256)"
                           }
                         },
-                        "id": 5199,
+                        "id": 5222,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1298,7 +1298,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "313030",
-                        "id": 5200,
+                        "id": 5223,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1327,7 +1327,7 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 5193,
+                        "id": 5216,
                         "name": "SafeMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -1338,7 +1338,7 @@
                           "typeString": "type(library SafeMath)"
                         }
                       },
-                      "id": 5194,
+                      "id": 5217,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1352,7 +1352,7 @@
                         "typeString": "function (uint256,uint256) pure returns (uint256)"
                       }
                     },
-                    "id": 5201,
+                    "id": 5224,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1371,15 +1371,15 @@
                 },
                 {
                   "assignments": [
-                    5204
+                    5227
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 5204,
+                      "id": 5227,
                       "name": "iDAI_NEWPortion",
                       "nodeType": "VariableDeclaration",
-                      "scope": 5249,
+                      "scope": 5272,
                       "src": "2089:20:25",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -1388,7 +1388,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 5203,
+                        "id": 5226,
                         "name": "uint",
                         "nodeType": "ElementaryTypeName",
                         "src": "2089:4:25",
@@ -1401,17 +1401,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 5210,
+                  "id": 5233,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 5207,
+                        "id": 5230,
                         "name": "invest_amt",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5187,
+                        "referencedDeclaration": 5210,
                         "src": "2125:10:25",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1420,11 +1420,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 5208,
+                        "id": 5231,
                         "name": "cDAI_NEWPortion",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5192,
+                        "referencedDeclaration": 5215,
                         "src": "2137:15:25",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1445,7 +1445,7 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 5205,
+                        "id": 5228,
                         "name": "SafeMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -1456,7 +1456,7 @@
                           "typeString": "type(library SafeMath)"
                         }
                       },
-                      "id": 5206,
+                      "id": 5229,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1470,7 +1470,7 @@
                         "typeString": "function (uint256,uint256) pure returns (uint256)"
                       }
                     },
-                    "id": 5209,
+                    "id": 5232,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1497,7 +1497,7 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 5222,
+                        "id": 5245,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1507,11 +1507,11 @@
                           "arguments": [
                             {
                               "argumentTypes": null,
-                              "id": 5214,
+                              "id": 5237,
                               "name": "invest_amt",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 5187,
+                              "referencedDeclaration": 5210,
                               "src": "2185:10:25",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
@@ -1523,11 +1523,11 @@
                               "arguments": [
                                 {
                                   "argumentTypes": null,
-                                  "id": 5217,
+                                  "id": 5240,
                                   "name": "cDAI_NEWPortion",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 5192,
+                                  "referencedDeclaration": 5215,
                                   "src": "2210:15:25",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_uint256",
@@ -1536,11 +1536,11 @@
                                 },
                                 {
                                   "argumentTypes": null,
-                                  "id": 5218,
+                                  "id": 5241,
                                   "name": "iDAI_NEWPortion",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 5204,
+                                  "referencedDeclaration": 5227,
                                   "src": "2227:15:25",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_uint256",
@@ -1561,7 +1561,7 @@
                                 ],
                                 "expression": {
                                   "argumentTypes": null,
-                                  "id": 5215,
+                                  "id": 5238,
                                   "name": "SafeMath",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
@@ -1572,7 +1572,7 @@
                                     "typeString": "type(library SafeMath)"
                                   }
                                 },
-                                "id": 5216,
+                                "id": 5239,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -1586,7 +1586,7 @@
                                   "typeString": "function (uint256,uint256) pure returns (uint256)"
                                 }
                               },
-                              "id": 5219,
+                              "id": 5242,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -1614,7 +1614,7 @@
                             ],
                             "expression": {
                               "argumentTypes": null,
-                              "id": 5212,
+                              "id": 5235,
                               "name": "SafeMath",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -1625,7 +1625,7 @@
                                 "typeString": "type(library SafeMath)"
                               }
                             },
-                            "id": 5213,
+                            "id": 5236,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -1639,7 +1639,7 @@
                               "typeString": "function (uint256,uint256) pure returns (uint256)"
                             }
                           },
-                          "id": 5220,
+                          "id": 5243,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1658,7 +1658,7 @@
                         "rightExpression": {
                           "argumentTypes": null,
                           "hexValue": "30",
-                          "id": 5221,
+                          "id": 5244,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1687,21 +1687,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 5211,
+                      "id": 5234,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8807,
-                        8808
+                        8976,
+                        8977
                       ],
-                      "referencedDeclaration": 8807,
+                      "referencedDeclaration": 8976,
                       "src": "2163:7:25",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 5223,
+                    "id": 5246,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1715,7 +1715,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5224,
+                  "id": 5247,
                   "nodeType": "ExpressionStatement",
                   "src": "2163:87:25"
                 },
@@ -1727,18 +1727,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 5232,
+                          "id": 5255,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8804,
+                          "referencedDeclaration": 8973,
                           "src": "2318:3:25",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 5233,
+                        "id": 5256,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1763,11 +1763,11 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 5230,
+                          "id": 5253,
                           "name": "cDAI_NEWPortion",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5192,
+                          "referencedDeclaration": 5215,
                           "src": "2301:15:25",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -1786,32 +1786,32 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 5225,
+                            "id": 5248,
                             "name": "Invest2cDAI_NEWContract",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5117,
+                            "referencedDeclaration": 5140,
                             "src": "2260:23:25",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5103",
+                              "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5126",
                               "typeString": "contract Invest2cDAI_NEW"
                             }
                           },
-                          "id": 5228,
+                          "id": 5251,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "LetsInvest",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 5102,
+                          "referencedDeclaration": 5125,
                           "src": "2260:34:25",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_payable$_t_address_$returns$__$",
                             "typeString": "function (address) payable external"
                           }
                         },
-                        "id": 5229,
+                        "id": 5252,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1825,7 +1825,7 @@
                           "typeString": "function (uint256) pure returns (function (address) payable external)"
                         }
                       },
-                      "id": 5231,
+                      "id": 5254,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1839,7 +1839,7 @@
                         "typeString": "function (address) payable external"
                       }
                     },
-                    "id": 5234,
+                    "id": 5257,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1853,7 +1853,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5235,
+                  "id": 5258,
                   "nodeType": "ExpressionStatement",
                   "src": "2260:69:25"
                 },
@@ -1865,18 +1865,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 5243,
+                          "id": 5266,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8804,
+                          "referencedDeclaration": 8973,
                           "src": "2404:3:25",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 5244,
+                        "id": 5267,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1901,11 +1901,11 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 5241,
+                          "id": 5264,
                           "name": "iDAI_NEWPortion",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5204,
+                          "referencedDeclaration": 5227,
                           "src": "2387:15:25",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -1924,32 +1924,32 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 5236,
+                            "id": 5259,
                             "name": "Invest2FulcrumiDAI_NEWContract",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5122,
+                            "referencedDeclaration": 5145,
                             "src": "2339:30:25",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5097",
+                              "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5120",
                               "typeString": "contract Invest2FulcrumiDAI_NEW"
                             }
                           },
-                          "id": 5239,
+                          "id": 5262,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "LetsInvest",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 5096,
+                          "referencedDeclaration": 5119,
                           "src": "2339:41:25",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_payable$_t_address_$returns$__$",
                             "typeString": "function (address) payable external"
                           }
                         },
-                        "id": 5240,
+                        "id": 5263,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1963,7 +1963,7 @@
                           "typeString": "function (uint256) pure returns (function (address) payable external)"
                         }
                       },
-                      "id": 5242,
+                      "id": 5265,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1977,7 +1977,7 @@
                         "typeString": "function (address) payable external"
                       }
                     },
-                    "id": 5245,
+                    "id": 5268,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1991,7 +1991,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5246,
+                  "id": 5269,
                   "nodeType": "ExpressionStatement",
                   "src": "2339:76:25"
                 },
@@ -1999,7 +1999,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "74727565",
-                    "id": 5247,
+                    "id": 5270,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -2014,28 +2014,28 @@
                     },
                     "value": "true"
                   },
-                  "functionReturnParameters": 5178,
-                  "id": 5248,
+                  "functionReturnParameters": 5201,
+                  "id": 5271,
                   "nodeType": "Return",
                   "src": "2425:11:25"
                 }
               ]
             },
             "documentation": null,
-            "id": 5250,
+            "id": 5273,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 5173,
+                "id": 5196,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 5172,
+                  "id": 5195,
                   "name": "stopInEmergency",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 5138,
+                  "referencedDeclaration": 5161,
                   "src": "1839:15:25",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -2047,10 +2047,10 @@
               },
               {
                 "arguments": null,
-                "id": 5175,
+                "id": 5198,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 5174,
+                  "id": 5197,
                   "name": "nonReentrant",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
@@ -2068,15 +2068,15 @@
             "name": "LetsInvest",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5171,
+              "id": 5194,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5170,
+                  "id": 5193,
                   "name": "_allocationToCDAI_new",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5250,
+                  "scope": 5273,
                   "src": "1811:26:25",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2085,7 +2085,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5169,
+                    "id": 5192,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "1811:4:25",
@@ -2101,15 +2101,15 @@
               "src": "1810:28:25"
             },
             "returnParameters": {
-              "id": 5178,
+              "id": 5201,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5177,
+                  "id": 5200,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5250,
+                  "scope": 5273,
                   "src": "1892:4:25",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2118,7 +2118,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 5176,
+                    "id": 5199,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1892:4:25",
@@ -2133,7 +2133,7 @@
               ],
               "src": "1891:6:25"
             },
-            "scope": 5297,
+            "scope": 5320,
             "src": "1791:652:25",
             "stateMutability": "payable",
             "superFunction": null,
@@ -2141,25 +2141,25 @@
           },
           {
             "body": {
-              "id": 5262,
+              "id": 5285,
               "nodeType": "Block",
               "src": "2649:37:25",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 5260,
+                    "id": 5283,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 5257,
+                      "id": 5280,
                       "name": "balance",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5128,
+                      "referencedDeclaration": 5151,
                       "src": "2659:7:25",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2172,18 +2172,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 5258,
+                        "id": 5281,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8804,
+                        "referencedDeclaration": 8973,
                         "src": "2670:3:25",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
                         }
                       },
-                      "id": 5259,
+                      "id": 5282,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2203,23 +2203,23 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 5261,
+                  "id": 5284,
                   "nodeType": "ExpressionStatement",
                   "src": "2659:20:25"
                 }
               ]
             },
             "documentation": null,
-            "id": 5263,
+            "id": 5286,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 5253,
+                "id": 5276,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 5252,
+                  "id": 5275,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
@@ -2237,21 +2237,21 @@
             "name": "depositETH",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5251,
+              "id": 5274,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2606:2:25"
             },
             "returnParameters": {
-              "id": 5256,
+              "id": 5279,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5255,
+                  "id": 5278,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5263,
+                  "scope": 5286,
                   "src": "2643:4:25",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2260,7 +2260,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5254,
+                    "id": 5277,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "2643:4:25",
@@ -2275,7 +2275,7 @@
               ],
               "src": "2642:6:25"
             },
-            "scope": 5297,
+            "scope": 5320,
             "src": "2587:99:25",
             "stateMutability": "payable",
             "superFunction": null,
@@ -2283,7 +2283,7 @@
           },
           {
             "body": {
-              "id": 5280,
+              "id": 5303,
               "nodeType": "Block",
               "src": "2830:124:25",
               "statements": [
@@ -2294,7 +2294,7 @@
                       "typeIdentifier": "t_address_payable",
                       "typeString": "address payable"
                     },
-                    "id": 5269,
+                    "id": 5292,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2303,18 +2303,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 5266,
+                        "id": 5289,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8804,
+                        "referencedDeclaration": 8973,
                         "src": "2844:3:25",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
                         }
                       },
-                      "id": 5267,
+                      "id": 5290,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2332,7 +2332,7 @@
                     "operator": "==",
                     "rightExpression": {
                       "argumentTypes": null,
-                      "id": 5268,
+                      "id": 5291,
                       "name": "_owner",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -2350,7 +2350,7 @@
                     }
                   },
                   "falseBody": {
-                    "id": 5278,
+                    "id": 5301,
                     "nodeType": "Block",
                     "src": "2909:39:25",
                     "statements": [
@@ -2361,7 +2361,7 @@
                             {
                               "argumentTypes": null,
                               "hexValue": "3530",
-                              "id": 5275,
+                              "id": 5298,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -2384,18 +2384,18 @@
                                 "typeString": "int_const 50"
                               }
                             ],
-                            "id": 5274,
+                            "id": 5297,
                             "name": "LetsInvest",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5250,
+                            "referencedDeclaration": 5273,
                             "src": "2923:10:25",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$_t_bool_$",
                               "typeString": "function (uint256) returns (bool)"
                             }
                           },
-                          "id": 5276,
+                          "id": 5299,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2409,17 +2409,17 @@
                             "typeString": "bool"
                           }
                         },
-                        "id": 5277,
+                        "id": 5300,
                         "nodeType": "ExpressionStatement",
                         "src": "2923:14:25"
                       }
                     ]
                   },
-                  "id": 5279,
+                  "id": 5302,
                   "nodeType": "IfStatement",
                   "src": "2840:108:25",
                   "trueBody": {
-                    "id": 5273,
+                    "id": 5296,
                     "nodeType": "Block",
                     "src": "2866:37:25",
                     "statements": [
@@ -2429,18 +2429,18 @@
                           "arguments": [],
                           "expression": {
                             "argumentTypes": [],
-                            "id": 5270,
+                            "id": 5293,
                             "name": "depositETH",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5263,
+                            "referencedDeclaration": 5286,
                             "src": "2880:10:25",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_nonpayable$__$returns$_t_uint256_$",
                               "typeString": "function () returns (uint256)"
                             }
                           },
-                          "id": 5271,
+                          "id": 5294,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2454,7 +2454,7 @@
                             "typeString": "uint256"
                           }
                         },
-                        "id": 5272,
+                        "id": 5295,
                         "nodeType": "ExpressionStatement",
                         "src": "2880:12:25"
                       }
@@ -2464,25 +2464,25 @@
               ]
             },
             "documentation": null,
-            "id": 5281,
+            "id": 5304,
             "implemented": true,
             "kind": "fallback",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5264,
+              "id": 5287,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2810:2:25"
             },
             "returnParameters": {
-              "id": 5265,
+              "id": 5288,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2830:0:25"
             },
-            "scope": 5297,
+            "scope": 5320,
             "src": "2802:152:25",
             "stateMutability": "payable",
             "superFunction": null,
@@ -2490,7 +2490,7 @@
           },
           {
             "body": {
-              "id": 5295,
+              "id": 5318,
               "nodeType": "Block",
               "src": "3061:55:25",
               "statements": [
@@ -2505,14 +2505,14 @@
                           "arguments": [
                             {
                               "argumentTypes": null,
-                              "id": 5290,
+                              "id": 5313,
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8896,
+                              "referencedDeclaration": 9103,
                               "src": "3095:4:25",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_SuperSaverZapV2_$5297",
+                                "typeIdentifier": "t_contract$_SuperSaverZapV2_$5320",
                                 "typeString": "contract SuperSaverZapV2"
                               }
                             }
@@ -2520,11 +2520,11 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_SuperSaverZapV2_$5297",
+                                "typeIdentifier": "t_contract$_SuperSaverZapV2_$5320",
                                 "typeString": "contract SuperSaverZapV2"
                               }
                             ],
-                            "id": 5289,
+                            "id": 5312,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2537,7 +2537,7 @@
                             },
                             "typeName": "address"
                           },
-                          "id": 5291,
+                          "id": 5314,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2551,7 +2551,7 @@
                             "typeString": "address payable"
                           }
                         },
-                        "id": 5292,
+                        "id": 5315,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2575,7 +2575,7 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 5286,
+                        "id": 5309,
                         "name": "_owner",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -2586,7 +2586,7 @@
                           "typeString": "address payable"
                         }
                       },
-                      "id": 5288,
+                      "id": 5311,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2600,7 +2600,7 @@
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 5293,
+                    "id": 5316,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2614,23 +2614,23 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5294,
+                  "id": 5317,
                   "nodeType": "ExpressionStatement",
                   "src": "3071:38:25"
                 }
               ]
             },
             "documentation": null,
-            "id": 5296,
+            "id": 5319,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 5284,
+                "id": 5307,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 5283,
+                  "id": 5306,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
@@ -2648,25 +2648,25 @@
             "name": "withdraw",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5282,
+              "id": 5305,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3042:2:25"
             },
             "returnParameters": {
-              "id": 5285,
+              "id": 5308,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3061:0:25"
             },
-            "scope": 5297,
+            "scope": 5320,
             "src": "3025:91:25",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 5298,
+        "scope": 5321,
         "src": "342:2781:25"
       }
     ],
@@ -2676,20 +2676,20 @@
     "absolutePath": "/Users/dipeshsukhani/Desktop/Coding/DockerMounting/Python/allFolders/RemixSharedFolder/contracts/SuperSaverZapV2_NewDAI.sol",
     "exportedSymbols": {
       "Invest2FulcrumiDAI_NEW": [
-        5097
+        5120
       ],
       "Invest2cDAI_NEW": [
-        5103
+        5126
       ],
       "SuperSaverZapV2": [
-        5297
+        5320
       ]
     },
-    "id": 5298,
+    "id": 5321,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 5088,
+        "id": 5111,
         "literals": [
           "solidity",
           "^",
@@ -2702,9 +2702,9 @@
       {
         "absolutePath": "/Users/dipeshsukhani/Desktop/Coding/DockerMounting/Python/allFolders/RemixSharedFolder/contracts/OpenZepplinOwnable.sol",
         "file": "./OpenZepplinOwnable.sol",
-        "id": 5089,
+        "id": 5112,
         "nodeType": "ImportDirective",
-        "scope": 5298,
+        "scope": 5321,
         "sourceUnit": 3634,
         "src": "25:34:25",
         "symbolAliases": [],
@@ -2713,9 +2713,9 @@
       {
         "absolutePath": "/Users/dipeshsukhani/Desktop/Coding/DockerMounting/Python/allFolders/RemixSharedFolder/contracts/OpenZepplinReentrancyGuard.sol",
         "file": "./OpenZepplinReentrancyGuard.sol",
-        "id": 5090,
+        "id": 5113,
         "nodeType": "ImportDirective",
-        "scope": 5298,
+        "scope": 5321,
         "sourceUnit": 3664,
         "src": "60:42:25",
         "symbolAliases": [],
@@ -2724,9 +2724,9 @@
       {
         "absolutePath": "/Users/dipeshsukhani/Desktop/Coding/DockerMounting/Python/allFolders/RemixSharedFolder/contracts/OpenZepplinSafeMath.sol",
         "file": "./OpenZepplinSafeMath.sol",
-        "id": 5091,
+        "id": 5114,
         "nodeType": "ImportDirective",
-        "scope": 5298,
+        "scope": 5321,
         "sourceUnit": 3851,
         "src": "103:35:25",
         "symbolAliases": [],
@@ -2738,9 +2738,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 5097,
+        "id": 5120,
         "linearizedBaseContracts": [
-          5097
+          5120
         ],
         "name": "Invest2FulcrumiDAI_NEW",
         "nodeType": "ContractDefinition",
@@ -2748,22 +2748,22 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5096,
+            "id": 5119,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "LetsInvest",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5094,
+              "id": 5117,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5093,
+                  "id": 5116,
                   "name": "_towhomtoissue",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5096,
+                  "scope": 5119,
                   "src": "200:22:25",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2772,7 +2772,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5092,
+                    "id": 5115,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "200:7:25",
@@ -2789,19 +2789,19 @@
               "src": "199:24:25"
             },
             "returnParameters": {
-              "id": 5095,
+              "id": 5118,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "240:0:25"
             },
-            "scope": 5097,
+            "scope": 5120,
             "src": "180:61:25",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 5298,
+        "scope": 5321,
         "src": "141:102:25"
       },
       {
@@ -2810,9 +2810,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 5103,
+        "id": 5126,
         "linearizedBaseContracts": [
-          5103
+          5126
         ],
         "name": "Invest2cDAI_NEW",
         "nodeType": "ContractDefinition",
@@ -2820,22 +2820,22 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5102,
+            "id": 5125,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "LetsInvest",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5100,
+              "id": 5123,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5099,
+                  "id": 5122,
                   "name": "_towhomtoissue",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5102,
+                  "scope": 5125,
                   "src": "297:22:25",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2844,7 +2844,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5098,
+                    "id": 5121,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "297:7:25",
@@ -2861,19 +2861,19 @@
               "src": "296:24:25"
             },
             "returnParameters": {
-              "id": 5101,
+              "id": 5124,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "337:0:25"
             },
-            "scope": 5103,
+            "scope": 5126,
             "src": "277:61:25",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 5298,
+        "scope": 5321,
         "src": "245:95:25"
       },
       {
@@ -2882,7 +2882,7 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 5104,
+              "id": 5127,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 3633,
@@ -2892,7 +2892,7 @@
                 "typeString": "contract Ownable"
               }
             },
-            "id": 5105,
+            "id": 5128,
             "nodeType": "InheritanceSpecifier",
             "src": "370:7:25"
           },
@@ -2900,7 +2900,7 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 5106,
+              "id": 5129,
               "name": "ReentrancyGuard",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 3663,
@@ -2910,7 +2910,7 @@
                 "typeString": "contract ReentrancyGuard"
               }
             },
-            "id": 5107,
+            "id": 5130,
             "nodeType": "InheritanceSpecifier",
             "src": "379:15:25"
           }
@@ -2923,9 +2923,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 5297,
+        "id": 5320,
         "linearizedBaseContracts": [
-          5297,
+          5320,
           3663,
           3633,
           3518
@@ -2934,10 +2934,10 @@
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "id": 5110,
+            "id": 5133,
             "libraryName": {
               "contractScope": null,
-              "id": 5108,
+              "id": 5131,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 3850,
@@ -2950,7 +2950,7 @@
             "nodeType": "UsingForDirective",
             "src": "401:24:25",
             "typeName": {
-              "id": 5109,
+              "id": 5132,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "420:4:25",
@@ -2962,10 +2962,10 @@
           },
           {
             "constant": false,
-            "id": 5112,
+            "id": 5135,
             "name": "cDAI_NEWPercentage",
             "nodeType": "VariableDeclaration",
-            "scope": 5297,
+            "scope": 5320,
             "src": "481:30:25",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2974,7 +2974,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 5111,
+              "id": 5134,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "481:4:25",
@@ -2988,26 +2988,26 @@
           },
           {
             "constant": false,
-            "id": 5117,
+            "id": 5140,
             "name": "Invest2cDAI_NEWContract",
             "nodeType": "VariableDeclaration",
-            "scope": 5297,
+            "scope": 5320,
             "src": "517:108:25",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5103",
+              "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5126",
               "typeString": "contract Invest2cDAI_NEW"
             },
             "typeName": {
               "contractScope": null,
-              "id": 5113,
+              "id": 5136,
               "name": "Invest2cDAI_NEW",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 5103,
+              "referencedDeclaration": 5126,
               "src": "517:15:25",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5103",
+                "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5126",
                 "typeString": "contract Invest2cDAI_NEW"
               }
             },
@@ -3017,7 +3017,7 @@
                 {
                   "argumentTypes": null,
                   "hexValue": "307831464539314235443533313632303634336341446341636339433362413833303937633142363938",
-                  "id": 5115,
+                  "id": 5138,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3040,18 +3040,18 @@
                     "typeString": "address payable"
                   }
                 ],
-                "id": 5114,
+                "id": 5137,
                 "name": "Invest2cDAI_NEW",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
-                "referencedDeclaration": 5103,
+                "referencedDeclaration": 5126,
                 "src": "566:15:25",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_type$_t_contract$_Invest2cDAI_NEW_$5103_$",
+                  "typeIdentifier": "t_type$_t_contract$_Invest2cDAI_NEW_$5126_$",
                   "typeString": "type(contract Invest2cDAI_NEW)"
                 }
               },
-              "id": 5116,
+              "id": 5139,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -3061,7 +3061,7 @@
               "nodeType": "FunctionCall",
               "src": "566:59:25",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5103",
+                "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5126",
                 "typeString": "contract Invest2cDAI_NEW"
               }
             },
@@ -3069,26 +3069,26 @@
           },
           {
             "constant": false,
-            "id": 5122,
+            "id": 5145,
             "name": "Invest2FulcrumiDAI_NEWContract",
             "nodeType": "VariableDeclaration",
-            "scope": 5297,
+            "scope": 5320,
             "src": "631:129:25",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5097",
+              "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5120",
               "typeString": "contract Invest2FulcrumiDAI_NEW"
             },
             "typeName": {
               "contractScope": null,
-              "id": 5118,
+              "id": 5141,
               "name": "Invest2FulcrumiDAI_NEW",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 5097,
+              "referencedDeclaration": 5120,
               "src": "631:22:25",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5097",
+                "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5120",
                 "typeString": "contract Invest2FulcrumiDAI_NEW"
               }
             },
@@ -3098,7 +3098,7 @@
                 {
                   "argumentTypes": null,
                   "hexValue": "307838343735396438653236336363314161393034326666333136463066443134384137433563623132",
-                  "id": 5120,
+                  "id": 5143,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3121,18 +3121,18 @@
                     "typeString": "address payable"
                   }
                 ],
-                "id": 5119,
+                "id": 5142,
                 "name": "Invest2FulcrumiDAI_NEW",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
-                "referencedDeclaration": 5097,
+                "referencedDeclaration": 5120,
                 "src": "694:22:25",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_type$_t_contract$_Invest2FulcrumiDAI_NEW_$5097_$",
+                  "typeIdentifier": "t_type$_t_contract$_Invest2FulcrumiDAI_NEW_$5120_$",
                   "typeString": "type(contract Invest2FulcrumiDAI_NEW)"
                 }
               },
-              "id": 5121,
+              "id": 5144,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -3142,7 +3142,7 @@
               "nodeType": "FunctionCall",
               "src": "694:66:25",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5097",
+                "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5120",
                 "typeString": "contract Invest2FulcrumiDAI_NEW"
               }
             },
@@ -3150,10 +3150,10 @@
           },
           {
             "constant": false,
-            "id": 5128,
+            "id": 5151,
             "name": "balance",
             "nodeType": "VariableDeclaration",
-            "scope": 5297,
+            "scope": 5320,
             "src": "826:43:25",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3162,7 +3162,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 5123,
+              "id": 5146,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "826:4:25",
@@ -3178,14 +3178,14 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 5125,
+                    "id": 5148,
                     "name": "this",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8896,
+                    "referencedDeclaration": 9103,
                     "src": "856:4:25",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_SuperSaverZapV2_$5297",
+                      "typeIdentifier": "t_contract$_SuperSaverZapV2_$5320",
                       "typeString": "contract SuperSaverZapV2"
                     }
                   }
@@ -3193,11 +3193,11 @@
                 "expression": {
                   "argumentTypes": [
                     {
-                      "typeIdentifier": "t_contract$_SuperSaverZapV2_$5297",
+                      "typeIdentifier": "t_contract$_SuperSaverZapV2_$5320",
                       "typeString": "contract SuperSaverZapV2"
                     }
                   ],
-                  "id": 5124,
+                  "id": 5147,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3210,7 +3210,7 @@
                   },
                   "typeName": "address"
                 },
-                "id": 5126,
+                "id": 5149,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": false,
@@ -3224,7 +3224,7 @@
                   "typeString": "address payable"
                 }
               },
-              "id": 5127,
+              "id": 5150,
               "isConstant": false,
               "isLValue": false,
               "isPure": false,
@@ -3242,10 +3242,10 @@
           },
           {
             "constant": false,
-            "id": 5131,
+            "id": 5154,
             "name": "stopped",
             "nodeType": "VariableDeclaration",
-            "scope": 5297,
+            "scope": 5320,
             "src": "947:28:25",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3254,7 +3254,7 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 5129,
+              "id": 5152,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
               "src": "947:4:25",
@@ -3266,7 +3266,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "66616c7365",
-              "id": 5130,
+              "id": 5153,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -3285,14 +3285,14 @@
           },
           {
             "body": {
-              "id": 5137,
+              "id": 5160,
               "nodeType": "Block",
               "src": "1045:18:25",
               "statements": [
                 {
                   "condition": {
                     "argumentTypes": null,
-                    "id": 5134,
+                    "id": 5157,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3303,11 +3303,11 @@
                     "src": "1050:8:25",
                     "subExpression": {
                       "argumentTypes": null,
-                      "id": 5133,
+                      "id": 5156,
                       "name": "stopped",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5131,
+                      "referencedDeclaration": 5154,
                       "src": "1051:7:25",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -3320,11 +3320,11 @@
                     }
                   },
                   "falseBody": null,
-                  "id": 5136,
+                  "id": 5159,
                   "nodeType": "IfStatement",
                   "src": "1046:15:25",
                   "trueBody": {
-                    "id": 5135,
+                    "id": 5158,
                     "nodeType": "PlaceholderStatement",
                     "src": "1060:1:25"
                   }
@@ -3332,11 +3332,11 @@
               ]
             },
             "documentation": null,
-            "id": 5138,
+            "id": 5161,
             "name": "stopInEmergency",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 5132,
+              "id": 5155,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1045:0:25"
@@ -3346,18 +3346,18 @@
           },
           {
             "body": {
-              "id": 5143,
+              "id": 5166,
               "nodeType": "Block",
               "src": "1093:17:25",
               "statements": [
                 {
                   "condition": {
                     "argumentTypes": null,
-                    "id": 5140,
+                    "id": 5163,
                     "name": "stopped",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 5131,
+                    "referencedDeclaration": 5154,
                     "src": "1098:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -3365,11 +3365,11 @@
                     }
                   },
                   "falseBody": null,
-                  "id": 5142,
+                  "id": 5165,
                   "nodeType": "IfStatement",
                   "src": "1094:14:25",
                   "trueBody": {
-                    "id": 5141,
+                    "id": 5164,
                     "nodeType": "PlaceholderStatement",
                     "src": "1107:1:25"
                   }
@@ -3377,11 +3377,11 @@
               ]
             },
             "documentation": null,
-            "id": 5144,
+            "id": 5167,
             "name": "onlyInEmergency",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 5139,
+              "id": 5162,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1093:0:25"
@@ -3391,28 +3391,28 @@
           },
           {
             "body": {
-              "id": 5155,
+              "id": 5178,
               "nodeType": "Block",
               "src": "1357:81:25",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 5153,
+                    "id": 5176,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 5151,
+                      "id": 5174,
                       "name": "Invest2FulcrumiDAI_NEWContract",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5122,
+                      "referencedDeclaration": 5145,
                       "src": "1367:30:25",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5097",
+                        "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5120",
                         "typeString": "contract Invest2FulcrumiDAI_NEW"
                       }
                     },
@@ -3420,40 +3420,40 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 5152,
+                      "id": 5175,
                       "name": "_Invest2FulcrumiDAI_NEWContract",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5146,
+                      "referencedDeclaration": 5169,
                       "src": "1400:31:25",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5097",
+                        "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5120",
                         "typeString": "contract Invest2FulcrumiDAI_NEW"
                       }
                     },
                     "src": "1367:64:25",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5097",
+                      "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5120",
                       "typeString": "contract Invest2FulcrumiDAI_NEW"
                     }
                   },
-                  "id": 5154,
+                  "id": 5177,
                   "nodeType": "ExpressionStatement",
                   "src": "1367:64:25"
                 }
               ]
             },
             "documentation": null,
-            "id": 5156,
+            "id": 5179,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 5149,
+                "id": 5172,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 5148,
+                  "id": 5171,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
@@ -3471,31 +3471,31 @@
             "name": "set_Invest2FulcrumiDAI_NEWContract",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5147,
+              "id": 5170,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5146,
+                  "id": 5169,
                   "name": "_Invest2FulcrumiDAI_NEWContract",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5156,
+                  "scope": 5179,
                   "src": "1284:54:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5097",
+                    "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5120",
                     "typeString": "contract Invest2FulcrumiDAI_NEW"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 5145,
+                    "id": 5168,
                     "name": "Invest2FulcrumiDAI_NEW",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5097,
+                    "referencedDeclaration": 5120,
                     "src": "1284:22:25",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5097",
+                      "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5120",
                       "typeString": "contract Invest2FulcrumiDAI_NEW"
                     }
                   },
@@ -3506,12 +3506,12 @@
               "src": "1283:56:25"
             },
             "returnParameters": {
-              "id": 5150,
+              "id": 5173,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1357:0:25"
             },
-            "scope": 5297,
+            "scope": 5320,
             "src": "1239:199:25",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -3519,28 +3519,28 @@
           },
           {
             "body": {
-              "id": 5167,
+              "id": 5190,
               "nodeType": "Block",
               "src": "1661:67:25",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 5165,
+                    "id": 5188,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 5163,
+                      "id": 5186,
                       "name": "Invest2cDAI_NEWContract",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5117,
+                      "referencedDeclaration": 5140,
                       "src": "1671:23:25",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5103",
+                        "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5126",
                         "typeString": "contract Invest2cDAI_NEW"
                       }
                     },
@@ -3548,40 +3548,40 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 5164,
+                      "id": 5187,
                       "name": "_Invest2cDAI_NEWContract",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5158,
+                      "referencedDeclaration": 5181,
                       "src": "1697:24:25",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5103",
+                        "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5126",
                         "typeString": "contract Invest2cDAI_NEW"
                       }
                     },
                     "src": "1671:50:25",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5103",
+                      "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5126",
                       "typeString": "contract Invest2cDAI_NEW"
                     }
                   },
-                  "id": 5166,
+                  "id": 5189,
                   "nodeType": "ExpressionStatement",
                   "src": "1671:50:25"
                 }
               ]
             },
             "documentation": null,
-            "id": 5168,
+            "id": 5191,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 5161,
+                "id": 5184,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 5160,
+                  "id": 5183,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
@@ -3599,31 +3599,31 @@
             "name": "set_Invest2cDAI_NEWContract",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5159,
+              "id": 5182,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5158,
+                  "id": 5181,
                   "name": "_Invest2cDAI_NEWContract",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5168,
+                  "scope": 5191,
                   "src": "1602:40:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5103",
+                    "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5126",
                     "typeString": "contract Invest2cDAI_NEW"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 5157,
+                    "id": 5180,
                     "name": "Invest2cDAI_NEW",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5103,
+                    "referencedDeclaration": 5126,
                     "src": "1602:15:25",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5103",
+                      "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5126",
                       "typeString": "contract Invest2cDAI_NEW"
                     }
                   },
@@ -3634,12 +3634,12 @@
               "src": "1601:42:25"
             },
             "returnParameters": {
-              "id": 5162,
+              "id": 5185,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1661:0:25"
             },
-            "scope": 5297,
+            "scope": 5320,
             "src": "1564:164:25",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -3647,7 +3647,7 @@
           },
           {
             "body": {
-              "id": 5249,
+              "id": 5272,
               "nodeType": "Block",
               "src": "1898:545:25",
               "statements": [
@@ -3661,7 +3661,7 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 5183,
+                        "id": 5206,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3670,18 +3670,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 5180,
+                            "id": 5203,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8804,
+                            "referencedDeclaration": 8973,
                             "src": "1917:3:25",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 5181,
+                          "id": 5204,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -3700,7 +3700,7 @@
                         "rightExpression": {
                           "argumentTypes": null,
                           "hexValue": "313030303030303030303030303030",
-                          "id": 5182,
+                          "id": 5205,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -3729,21 +3729,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 5179,
+                      "id": 5202,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8807,
-                        8808
+                        8976,
+                        8977
                       ],
-                      "referencedDeclaration": 8807,
+                      "referencedDeclaration": 8976,
                       "src": "1908:7:25",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 5184,
+                    "id": 5207,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3757,21 +3757,21 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5185,
+                  "id": 5208,
                   "nodeType": "ExpressionStatement",
                   "src": "1908:37:25"
                 },
                 {
                   "assignments": [
-                    5187
+                    5210
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 5187,
+                      "id": 5210,
                       "name": "invest_amt",
                       "nodeType": "VariableDeclaration",
-                      "scope": 5249,
+                      "scope": 5272,
                       "src": "1955:15:25",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -3780,7 +3780,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 5186,
+                        "id": 5209,
                         "name": "uint",
                         "nodeType": "ElementaryTypeName",
                         "src": "1955:4:25",
@@ -3793,23 +3793,23 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 5190,
+                  "id": 5213,
                   "initialValue": {
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 5188,
+                      "id": 5211,
                       "name": "msg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8804,
+                      "referencedDeclaration": 8973,
                       "src": "1973:3:25",
                       "typeDescriptions": {
                         "typeIdentifier": "t_magic_message",
                         "typeString": "msg"
                       }
                     },
-                    "id": 5189,
+                    "id": 5212,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3828,15 +3828,15 @@
                 },
                 {
                   "assignments": [
-                    5192
+                    5215
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 5192,
+                      "id": 5215,
                       "name": "cDAI_NEWPortion",
                       "nodeType": "VariableDeclaration",
-                      "scope": 5249,
+                      "scope": 5272,
                       "src": "1992:20:25",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -3845,7 +3845,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 5191,
+                        "id": 5214,
                         "name": "uint",
                         "nodeType": "ElementaryTypeName",
                         "src": "1992:4:25",
@@ -3858,7 +3858,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 5202,
+                  "id": 5225,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
@@ -3867,11 +3867,11 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 5197,
+                            "id": 5220,
                             "name": "invest_amt",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5187,
+                            "referencedDeclaration": 5210,
                             "src": "2041:10:25",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -3880,11 +3880,11 @@
                           },
                           {
                             "argumentTypes": null,
-                            "id": 5198,
+                            "id": 5221,
                             "name": "_allocationToCDAI_new",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5170,
+                            "referencedDeclaration": 5193,
                             "src": "2052:21:25",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -3905,7 +3905,7 @@
                           ],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 5195,
+                            "id": 5218,
                             "name": "SafeMath",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -3916,7 +3916,7 @@
                               "typeString": "type(library SafeMath)"
                             }
                           },
-                          "id": 5196,
+                          "id": 5219,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -3930,7 +3930,7 @@
                             "typeString": "function (uint256,uint256) pure returns (uint256)"
                           }
                         },
-                        "id": 5199,
+                        "id": 5222,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3947,7 +3947,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "313030",
-                        "id": 5200,
+                        "id": 5223,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -3976,7 +3976,7 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 5193,
+                        "id": 5216,
                         "name": "SafeMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -3987,7 +3987,7 @@
                           "typeString": "type(library SafeMath)"
                         }
                       },
-                      "id": 5194,
+                      "id": 5217,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4001,7 +4001,7 @@
                         "typeString": "function (uint256,uint256) pure returns (uint256)"
                       }
                     },
-                    "id": 5201,
+                    "id": 5224,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4020,15 +4020,15 @@
                 },
                 {
                   "assignments": [
-                    5204
+                    5227
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 5204,
+                      "id": 5227,
                       "name": "iDAI_NEWPortion",
                       "nodeType": "VariableDeclaration",
-                      "scope": 5249,
+                      "scope": 5272,
                       "src": "2089:20:25",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -4037,7 +4037,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 5203,
+                        "id": 5226,
                         "name": "uint",
                         "nodeType": "ElementaryTypeName",
                         "src": "2089:4:25",
@@ -4050,17 +4050,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 5210,
+                  "id": 5233,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 5207,
+                        "id": 5230,
                         "name": "invest_amt",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5187,
+                        "referencedDeclaration": 5210,
                         "src": "2125:10:25",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -4069,11 +4069,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 5208,
+                        "id": 5231,
                         "name": "cDAI_NEWPortion",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5192,
+                        "referencedDeclaration": 5215,
                         "src": "2137:15:25",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -4094,7 +4094,7 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 5205,
+                        "id": 5228,
                         "name": "SafeMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -4105,7 +4105,7 @@
                           "typeString": "type(library SafeMath)"
                         }
                       },
-                      "id": 5206,
+                      "id": 5229,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4119,7 +4119,7 @@
                         "typeString": "function (uint256,uint256) pure returns (uint256)"
                       }
                     },
-                    "id": 5209,
+                    "id": 5232,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4146,7 +4146,7 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 5222,
+                        "id": 5245,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4156,11 +4156,11 @@
                           "arguments": [
                             {
                               "argumentTypes": null,
-                              "id": 5214,
+                              "id": 5237,
                               "name": "invest_amt",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 5187,
+                              "referencedDeclaration": 5210,
                               "src": "2185:10:25",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
@@ -4172,11 +4172,11 @@
                               "arguments": [
                                 {
                                   "argumentTypes": null,
-                                  "id": 5217,
+                                  "id": 5240,
                                   "name": "cDAI_NEWPortion",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 5192,
+                                  "referencedDeclaration": 5215,
                                   "src": "2210:15:25",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_uint256",
@@ -4185,11 +4185,11 @@
                                 },
                                 {
                                   "argumentTypes": null,
-                                  "id": 5218,
+                                  "id": 5241,
                                   "name": "iDAI_NEWPortion",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 5204,
+                                  "referencedDeclaration": 5227,
                                   "src": "2227:15:25",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_uint256",
@@ -4210,7 +4210,7 @@
                                 ],
                                 "expression": {
                                   "argumentTypes": null,
-                                  "id": 5215,
+                                  "id": 5238,
                                   "name": "SafeMath",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
@@ -4221,7 +4221,7 @@
                                     "typeString": "type(library SafeMath)"
                                   }
                                 },
-                                "id": 5216,
+                                "id": 5239,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -4235,7 +4235,7 @@
                                   "typeString": "function (uint256,uint256) pure returns (uint256)"
                                 }
                               },
-                              "id": 5219,
+                              "id": 5242,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -4263,7 +4263,7 @@
                             ],
                             "expression": {
                               "argumentTypes": null,
-                              "id": 5212,
+                              "id": 5235,
                               "name": "SafeMath",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -4274,7 +4274,7 @@
                                 "typeString": "type(library SafeMath)"
                               }
                             },
-                            "id": 5213,
+                            "id": 5236,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -4288,7 +4288,7 @@
                               "typeString": "function (uint256,uint256) pure returns (uint256)"
                             }
                           },
-                          "id": 5220,
+                          "id": 5243,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -4307,7 +4307,7 @@
                         "rightExpression": {
                           "argumentTypes": null,
                           "hexValue": "30",
-                          "id": 5221,
+                          "id": 5244,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -4336,21 +4336,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 5211,
+                      "id": 5234,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8807,
-                        8808
+                        8976,
+                        8977
                       ],
-                      "referencedDeclaration": 8807,
+                      "referencedDeclaration": 8976,
                       "src": "2163:7:25",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 5223,
+                    "id": 5246,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4364,7 +4364,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5224,
+                  "id": 5247,
                   "nodeType": "ExpressionStatement",
                   "src": "2163:87:25"
                 },
@@ -4376,18 +4376,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 5232,
+                          "id": 5255,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8804,
+                          "referencedDeclaration": 8973,
                           "src": "2318:3:25",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 5233,
+                        "id": 5256,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4412,11 +4412,11 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 5230,
+                          "id": 5253,
                           "name": "cDAI_NEWPortion",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5192,
+                          "referencedDeclaration": 5215,
                           "src": "2301:15:25",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -4435,32 +4435,32 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 5225,
+                            "id": 5248,
                             "name": "Invest2cDAI_NEWContract",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5117,
+                            "referencedDeclaration": 5140,
                             "src": "2260:23:25",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5103",
+                              "typeIdentifier": "t_contract$_Invest2cDAI_NEW_$5126",
                               "typeString": "contract Invest2cDAI_NEW"
                             }
                           },
-                          "id": 5228,
+                          "id": 5251,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "LetsInvest",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 5102,
+                          "referencedDeclaration": 5125,
                           "src": "2260:34:25",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_payable$_t_address_$returns$__$",
                             "typeString": "function (address) payable external"
                           }
                         },
-                        "id": 5229,
+                        "id": 5252,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4474,7 +4474,7 @@
                           "typeString": "function (uint256) pure returns (function (address) payable external)"
                         }
                       },
-                      "id": 5231,
+                      "id": 5254,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4488,7 +4488,7 @@
                         "typeString": "function (address) payable external"
                       }
                     },
-                    "id": 5234,
+                    "id": 5257,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4502,7 +4502,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5235,
+                  "id": 5258,
                   "nodeType": "ExpressionStatement",
                   "src": "2260:69:25"
                 },
@@ -4514,18 +4514,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 5243,
+                          "id": 5266,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8804,
+                          "referencedDeclaration": 8973,
                           "src": "2404:3:25",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 5244,
+                        "id": 5267,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4550,11 +4550,11 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 5241,
+                          "id": 5264,
                           "name": "iDAI_NEWPortion",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5204,
+                          "referencedDeclaration": 5227,
                           "src": "2387:15:25",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -4573,32 +4573,32 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 5236,
+                            "id": 5259,
                             "name": "Invest2FulcrumiDAI_NEWContract",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5122,
+                            "referencedDeclaration": 5145,
                             "src": "2339:30:25",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5097",
+                              "typeIdentifier": "t_contract$_Invest2FulcrumiDAI_NEW_$5120",
                               "typeString": "contract Invest2FulcrumiDAI_NEW"
                             }
                           },
-                          "id": 5239,
+                          "id": 5262,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "LetsInvest",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 5096,
+                          "referencedDeclaration": 5119,
                           "src": "2339:41:25",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_payable$_t_address_$returns$__$",
                             "typeString": "function (address) payable external"
                           }
                         },
-                        "id": 5240,
+                        "id": 5263,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4612,7 +4612,7 @@
                           "typeString": "function (uint256) pure returns (function (address) payable external)"
                         }
                       },
-                      "id": 5242,
+                      "id": 5265,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4626,7 +4626,7 @@
                         "typeString": "function (address) payable external"
                       }
                     },
-                    "id": 5245,
+                    "id": 5268,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4640,7 +4640,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5246,
+                  "id": 5269,
                   "nodeType": "ExpressionStatement",
                   "src": "2339:76:25"
                 },
@@ -4648,7 +4648,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "74727565",
-                    "id": 5247,
+                    "id": 5270,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -4663,28 +4663,28 @@
                     },
                     "value": "true"
                   },
-                  "functionReturnParameters": 5178,
-                  "id": 5248,
+                  "functionReturnParameters": 5201,
+                  "id": 5271,
                   "nodeType": "Return",
                   "src": "2425:11:25"
                 }
               ]
             },
             "documentation": null,
-            "id": 5250,
+            "id": 5273,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 5173,
+                "id": 5196,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 5172,
+                  "id": 5195,
                   "name": "stopInEmergency",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 5138,
+                  "referencedDeclaration": 5161,
                   "src": "1839:15:25",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -4696,10 +4696,10 @@
               },
               {
                 "arguments": null,
-                "id": 5175,
+                "id": 5198,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 5174,
+                  "id": 5197,
                   "name": "nonReentrant",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
@@ -4717,15 +4717,15 @@
             "name": "LetsInvest",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5171,
+              "id": 5194,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5170,
+                  "id": 5193,
                   "name": "_allocationToCDAI_new",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5250,
+                  "scope": 5273,
                   "src": "1811:26:25",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4734,7 +4734,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5169,
+                    "id": 5192,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "1811:4:25",
@@ -4750,15 +4750,15 @@
               "src": "1810:28:25"
             },
             "returnParameters": {
-              "id": 5178,
+              "id": 5201,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5177,
+                  "id": 5200,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5250,
+                  "scope": 5273,
                   "src": "1892:4:25",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4767,7 +4767,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 5176,
+                    "id": 5199,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1892:4:25",
@@ -4782,7 +4782,7 @@
               ],
               "src": "1891:6:25"
             },
-            "scope": 5297,
+            "scope": 5320,
             "src": "1791:652:25",
             "stateMutability": "payable",
             "superFunction": null,
@@ -4790,25 +4790,25 @@
           },
           {
             "body": {
-              "id": 5262,
+              "id": 5285,
               "nodeType": "Block",
               "src": "2649:37:25",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 5260,
+                    "id": 5283,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 5257,
+                      "id": 5280,
                       "name": "balance",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5128,
+                      "referencedDeclaration": 5151,
                       "src": "2659:7:25",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -4821,18 +4821,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 5258,
+                        "id": 5281,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8804,
+                        "referencedDeclaration": 8973,
                         "src": "2670:3:25",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
                         }
                       },
-                      "id": 5259,
+                      "id": 5282,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4852,23 +4852,23 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 5261,
+                  "id": 5284,
                   "nodeType": "ExpressionStatement",
                   "src": "2659:20:25"
                 }
               ]
             },
             "documentation": null,
-            "id": 5263,
+            "id": 5286,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 5253,
+                "id": 5276,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 5252,
+                  "id": 5275,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
@@ -4886,21 +4886,21 @@
             "name": "depositETH",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5251,
+              "id": 5274,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2606:2:25"
             },
             "returnParameters": {
-              "id": 5256,
+              "id": 5279,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5255,
+                  "id": 5278,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5263,
+                  "scope": 5286,
                   "src": "2643:4:25",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4909,7 +4909,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5254,
+                    "id": 5277,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "2643:4:25",
@@ -4924,7 +4924,7 @@
               ],
               "src": "2642:6:25"
             },
-            "scope": 5297,
+            "scope": 5320,
             "src": "2587:99:25",
             "stateMutability": "payable",
             "superFunction": null,
@@ -4932,7 +4932,7 @@
           },
           {
             "body": {
-              "id": 5280,
+              "id": 5303,
               "nodeType": "Block",
               "src": "2830:124:25",
               "statements": [
@@ -4943,7 +4943,7 @@
                       "typeIdentifier": "t_address_payable",
                       "typeString": "address payable"
                     },
-                    "id": 5269,
+                    "id": 5292,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4952,18 +4952,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 5266,
+                        "id": 5289,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8804,
+                        "referencedDeclaration": 8973,
                         "src": "2844:3:25",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
                         }
                       },
-                      "id": 5267,
+                      "id": 5290,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4981,7 +4981,7 @@
                     "operator": "==",
                     "rightExpression": {
                       "argumentTypes": null,
-                      "id": 5268,
+                      "id": 5291,
                       "name": "_owner",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -4999,7 +4999,7 @@
                     }
                   },
                   "falseBody": {
-                    "id": 5278,
+                    "id": 5301,
                     "nodeType": "Block",
                     "src": "2909:39:25",
                     "statements": [
@@ -5010,7 +5010,7 @@
                             {
                               "argumentTypes": null,
                               "hexValue": "3530",
-                              "id": 5275,
+                              "id": 5298,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -5033,18 +5033,18 @@
                                 "typeString": "int_const 50"
                               }
                             ],
-                            "id": 5274,
+                            "id": 5297,
                             "name": "LetsInvest",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5250,
+                            "referencedDeclaration": 5273,
                             "src": "2923:10:25",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$_t_bool_$",
                               "typeString": "function (uint256) returns (bool)"
                             }
                           },
-                          "id": 5276,
+                          "id": 5299,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -5058,17 +5058,17 @@
                             "typeString": "bool"
                           }
                         },
-                        "id": 5277,
+                        "id": 5300,
                         "nodeType": "ExpressionStatement",
                         "src": "2923:14:25"
                       }
                     ]
                   },
-                  "id": 5279,
+                  "id": 5302,
                   "nodeType": "IfStatement",
                   "src": "2840:108:25",
                   "trueBody": {
-                    "id": 5273,
+                    "id": 5296,
                     "nodeType": "Block",
                     "src": "2866:37:25",
                     "statements": [
@@ -5078,18 +5078,18 @@
                           "arguments": [],
                           "expression": {
                             "argumentTypes": [],
-                            "id": 5270,
+                            "id": 5293,
                             "name": "depositETH",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5263,
+                            "referencedDeclaration": 5286,
                             "src": "2880:10:25",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_nonpayable$__$returns$_t_uint256_$",
                               "typeString": "function () returns (uint256)"
                             }
                           },
-                          "id": 5271,
+                          "id": 5294,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -5103,7 +5103,7 @@
                             "typeString": "uint256"
                           }
                         },
-                        "id": 5272,
+                        "id": 5295,
                         "nodeType": "ExpressionStatement",
                         "src": "2880:12:25"
                       }
@@ -5113,25 +5113,25 @@
               ]
             },
             "documentation": null,
-            "id": 5281,
+            "id": 5304,
             "implemented": true,
             "kind": "fallback",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5264,
+              "id": 5287,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2810:2:25"
             },
             "returnParameters": {
-              "id": 5265,
+              "id": 5288,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2830:0:25"
             },
-            "scope": 5297,
+            "scope": 5320,
             "src": "2802:152:25",
             "stateMutability": "payable",
             "superFunction": null,
@@ -5139,7 +5139,7 @@
           },
           {
             "body": {
-              "id": 5295,
+              "id": 5318,
               "nodeType": "Block",
               "src": "3061:55:25",
               "statements": [
@@ -5154,14 +5154,14 @@
                           "arguments": [
                             {
                               "argumentTypes": null,
-                              "id": 5290,
+                              "id": 5313,
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8896,
+                              "referencedDeclaration": 9103,
                               "src": "3095:4:25",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_SuperSaverZapV2_$5297",
+                                "typeIdentifier": "t_contract$_SuperSaverZapV2_$5320",
                                 "typeString": "contract SuperSaverZapV2"
                               }
                             }
@@ -5169,11 +5169,11 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_SuperSaverZapV2_$5297",
+                                "typeIdentifier": "t_contract$_SuperSaverZapV2_$5320",
                                 "typeString": "contract SuperSaverZapV2"
                               }
                             ],
-                            "id": 5289,
+                            "id": 5312,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -5186,7 +5186,7 @@
                             },
                             "typeName": "address"
                           },
-                          "id": 5291,
+                          "id": 5314,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -5200,7 +5200,7 @@
                             "typeString": "address payable"
                           }
                         },
-                        "id": 5292,
+                        "id": 5315,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -5224,7 +5224,7 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 5286,
+                        "id": 5309,
                         "name": "_owner",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -5235,7 +5235,7 @@
                           "typeString": "address payable"
                         }
                       },
-                      "id": 5288,
+                      "id": 5311,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -5249,7 +5249,7 @@
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 5293,
+                    "id": 5316,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5263,23 +5263,23 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5294,
+                  "id": 5317,
                   "nodeType": "ExpressionStatement",
                   "src": "3071:38:25"
                 }
               ]
             },
             "documentation": null,
-            "id": 5296,
+            "id": 5319,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 5284,
+                "id": 5307,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 5283,
+                  "id": 5306,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
@@ -5297,25 +5297,25 @@
             "name": "withdraw",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5282,
+              "id": 5305,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3042:2:25"
             },
             "returnParameters": {
-              "id": 5285,
+              "id": 5308,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3061:0:25"
             },
-            "scope": 5297,
+            "scope": 5320,
             "src": "3025:91:25",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 5298,
+        "scope": 5321,
         "src": "342:2781:25"
       }
     ],
@@ -5327,7 +5327,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-12-06T05:57:31.692Z",
+  "updatedAt": "2019-12-06T10:22:27.312Z",
   "devdoc": {
     "methods": {}
   },

@@ -584,7 +584,7 @@
         "id": 1508,
         "nodeType": "ImportDirective",
         "scope": 1646,
-        "sourceUnit": 4306,
+        "sourceUnit": 4329,
         "src": "427:31:6",
         "symbolAliases": [],
         "unitAlias": ""
@@ -616,10 +616,10 @@
               "id": 1511,
               "name": "ReentrancyGuard",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4305,
+              "referencedDeclaration": 4328,
               "src": "505:15:6",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ReentrancyGuard_$4305",
+                "typeIdentifier": "t_contract$_ReentrancyGuard_$4328",
                 "typeString": "contract ReentrancyGuard"
               }
             },
@@ -630,7 +630,7 @@
         ],
         "contractDependencies": [
           3895,
-          4305
+          4328
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -638,7 +638,7 @@
         "id": 1645,
         "linearizedBaseContracts": [
           1645,
-          4305,
+          4328,
           3895
         ],
         "name": "Invest2Fulcrum2xLongBTC",
@@ -1146,7 +1146,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8804,
+                            "referencedDeclaration": 8973,
                             "src": "1761:3:6",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -1205,10 +1205,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8807,
-                        8808
+                        8976,
+                        8977
                       ],
-                      "referencedDeclaration": 8807,
+                      "referencedDeclaration": 8976,
                       "src": "1752:7:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1256,7 +1256,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8804,
+                            "referencedDeclaration": 8973,
                             "src": "1808:3:6",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -1353,10 +1353,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8807,
-                        8808
+                        8976,
+                        8977
                       ],
-                      "referencedDeclaration": 8807,
+                      "referencedDeclaration": 8976,
                       "src": "1799:7:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1422,7 +1422,7 @@
                       "name": "msg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8804,
+                      "referencedDeclaration": 8973,
                       "src": "1869:3:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_magic_message",
@@ -1822,7 +1822,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8804,
+                        "referencedDeclaration": 8973,
                         "src": "2342:3:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -1953,7 +1953,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8804,
+                        "referencedDeclaration": 8973,
                         "src": "2516:3:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -2012,7 +2012,7 @@
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 8804,
+                                "referencedDeclaration": 8973,
                                 "src": "2622:3:6",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_message",
@@ -2166,7 +2166,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8868,
+                              "referencedDeclaration": 9023,
                               "src": "2790:4:6",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_Invest2Fulcrum2xLongBTC_$1645",
@@ -2737,7 +2737,7 @@
         "id": 1508,
         "nodeType": "ImportDirective",
         "scope": 1646,
-        "sourceUnit": 4306,
+        "sourceUnit": 4329,
         "src": "427:31:6",
         "symbolAliases": [],
         "unitAlias": ""
@@ -2769,10 +2769,10 @@
               "id": 1511,
               "name": "ReentrancyGuard",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4305,
+              "referencedDeclaration": 4328,
               "src": "505:15:6",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ReentrancyGuard_$4305",
+                "typeIdentifier": "t_contract$_ReentrancyGuard_$4328",
                 "typeString": "contract ReentrancyGuard"
               }
             },
@@ -2783,7 +2783,7 @@
         ],
         "contractDependencies": [
           3895,
-          4305
+          4328
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -2791,7 +2791,7 @@
         "id": 1645,
         "linearizedBaseContracts": [
           1645,
-          4305,
+          4328,
           3895
         ],
         "name": "Invest2Fulcrum2xLongBTC",
@@ -3299,7 +3299,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8804,
+                            "referencedDeclaration": 8973,
                             "src": "1761:3:6",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -3358,10 +3358,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8807,
-                        8808
+                        8976,
+                        8977
                       ],
-                      "referencedDeclaration": 8807,
+                      "referencedDeclaration": 8976,
                       "src": "1752:7:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -3409,7 +3409,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8804,
+                            "referencedDeclaration": 8973,
                             "src": "1808:3:6",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -3506,10 +3506,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8807,
-                        8808
+                        8976,
+                        8977
                       ],
-                      "referencedDeclaration": 8807,
+                      "referencedDeclaration": 8976,
                       "src": "1799:7:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -3575,7 +3575,7 @@
                       "name": "msg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8804,
+                      "referencedDeclaration": 8973,
                       "src": "1869:3:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_magic_message",
@@ -3975,7 +3975,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8804,
+                        "referencedDeclaration": 8973,
                         "src": "2342:3:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -4106,7 +4106,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8804,
+                        "referencedDeclaration": 8973,
                         "src": "2516:3:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -4165,7 +4165,7 @@
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 8804,
+                                "referencedDeclaration": 8973,
                                 "src": "2622:3:6",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_message",
@@ -4319,7 +4319,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8868,
+                              "referencedDeclaration": 9023,
                               "src": "2790:4:6",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_Invest2Fulcrum2xLongBTC_$1645",
@@ -4488,7 +4488,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-12-06T05:55:54.833Z",
+  "updatedAt": "2019-12-06T10:22:27.301Z",
   "devdoc": {
     "methods": {}
   },
