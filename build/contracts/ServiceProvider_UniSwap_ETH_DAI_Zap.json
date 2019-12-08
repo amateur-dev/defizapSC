@@ -983,7 +983,7 @@
                     "name": "this",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 9085,
+                    "referencedDeclaration": 9930,
                     "src": "1237:4:19",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_ServiceProvider_UniSwap_ETH_DAI_Zap_$4296",
@@ -2242,7 +2242,7 @@
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 8973,
+                                "referencedDeclaration": 9830,
                                 "src": "3359:3:19",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_message",
@@ -2376,10 +2376,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8976,
-                        8977
+                        9833,
+                        9834
                       ],
-                      "referencedDeclaration": 8977,
+                      "referencedDeclaration": 9834,
                       "src": "3310:7:19",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2449,7 +2449,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 9085,
+                            "referencedDeclaration": 9930,
                             "src": "3552:4:19",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_ServiceProvider_UniSwap_ETH_DAI_Zap_$4296",
@@ -2642,7 +2642,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 9085,
+                            "referencedDeclaration": 9930,
                             "src": "3692:4:19",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_ServiceProvider_UniSwap_ETH_DAI_Zap_$4296",
@@ -3139,7 +3139,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8973,
+                              "referencedDeclaration": 9830,
                               "src": "4214:3:19",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -3260,10 +3260,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8976,
-                        8977
+                        9833,
+                        9834
                       ],
-                      "referencedDeclaration": 8977,
+                      "referencedDeclaration": 9834,
                       "src": "4178:7:19",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -3303,7 +3303,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8973,
+                              "referencedDeclaration": 9830,
                               "src": "4336:3:19",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -3424,10 +3424,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8976,
-                        8977
+                        9833,
+                        9834
                       ],
-                      "referencedDeclaration": 8977,
+                      "referencedDeclaration": 9834,
                       "src": "4301:7:19",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -3828,10 +3828,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8976,
-                        8977
+                        9833,
+                        9834
                       ],
-                      "referencedDeclaration": 8977,
+                      "referencedDeclaration": 9834,
                       "src": "4840:7:19",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -3976,10 +3976,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8976,
-                        8977
+                        9833,
+                        9834
                       ],
-                      "referencedDeclaration": 8977,
+                      "referencedDeclaration": 9834,
                       "src": "4955:7:19",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -4183,7 +4183,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 9085,
+                            "referencedDeclaration": 9930,
                             "src": "5369:4:19",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_ServiceProvider_UniSwap_ETH_DAI_Zap_$4296",
@@ -4491,7 +4491,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 9085,
+                            "referencedDeclaration": 9930,
                             "src": "5619:4:19",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_ServiceProvider_UniSwap_ETH_DAI_Zap_$4296",
@@ -4770,7 +4770,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 9085,
+                            "referencedDeclaration": 9930,
                             "src": "5833:4:19",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_ServiceProvider_UniSwap_ETH_DAI_Zap_$4296",
@@ -5035,7 +5035,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8973,
+                        "referencedDeclaration": 9830,
                         "src": "6127:3:19",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -5139,7 +5139,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8973,
+                        "referencedDeclaration": 9830,
                         "src": "6301:3:19",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -5317,7 +5317,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 9085,
+                              "referencedDeclaration": 9930,
                               "src": "6551:4:19",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_ServiceProvider_UniSwap_ETH_DAI_Zap_$4296",
@@ -6062,7 +6062,7 @@
                     "name": "this",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 9085,
+                    "referencedDeclaration": 9930,
                     "src": "1237:4:19",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_ServiceProvider_UniSwap_ETH_DAI_Zap_$4296",
@@ -7321,7 +7321,7 @@
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 8973,
+                                "referencedDeclaration": 9830,
                                 "src": "3359:3:19",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_message",
@@ -7455,10 +7455,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8976,
-                        8977
+                        9833,
+                        9834
                       ],
-                      "referencedDeclaration": 8977,
+                      "referencedDeclaration": 9834,
                       "src": "3310:7:19",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -7528,7 +7528,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 9085,
+                            "referencedDeclaration": 9930,
                             "src": "3552:4:19",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_ServiceProvider_UniSwap_ETH_DAI_Zap_$4296",
@@ -7721,7 +7721,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 9085,
+                            "referencedDeclaration": 9930,
                             "src": "3692:4:19",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_ServiceProvider_UniSwap_ETH_DAI_Zap_$4296",
@@ -8218,7 +8218,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8973,
+                              "referencedDeclaration": 9830,
                               "src": "4214:3:19",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -8339,10 +8339,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8976,
-                        8977
+                        9833,
+                        9834
                       ],
-                      "referencedDeclaration": 8977,
+                      "referencedDeclaration": 9834,
                       "src": "4178:7:19",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -8382,7 +8382,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8973,
+                              "referencedDeclaration": 9830,
                               "src": "4336:3:19",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -8503,10 +8503,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8976,
-                        8977
+                        9833,
+                        9834
                       ],
-                      "referencedDeclaration": 8977,
+                      "referencedDeclaration": 9834,
                       "src": "4301:7:19",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -8907,10 +8907,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8976,
-                        8977
+                        9833,
+                        9834
                       ],
-                      "referencedDeclaration": 8977,
+                      "referencedDeclaration": 9834,
                       "src": "4840:7:19",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -9055,10 +9055,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8976,
-                        8977
+                        9833,
+                        9834
                       ],
-                      "referencedDeclaration": 8977,
+                      "referencedDeclaration": 9834,
                       "src": "4955:7:19",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -9262,7 +9262,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 9085,
+                            "referencedDeclaration": 9930,
                             "src": "5369:4:19",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_ServiceProvider_UniSwap_ETH_DAI_Zap_$4296",
@@ -9570,7 +9570,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 9085,
+                            "referencedDeclaration": 9930,
                             "src": "5619:4:19",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_ServiceProvider_UniSwap_ETH_DAI_Zap_$4296",
@@ -9849,7 +9849,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 9085,
+                            "referencedDeclaration": 9930,
                             "src": "5833:4:19",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_ServiceProvider_UniSwap_ETH_DAI_Zap_$4296",
@@ -10114,7 +10114,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8973,
+                        "referencedDeclaration": 9830,
                         "src": "6127:3:19",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -10218,7 +10218,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8973,
+                        "referencedDeclaration": 9830,
                         "src": "6301:3:19",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -10396,7 +10396,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 9085,
+                              "referencedDeclaration": 9930,
                               "src": "6551:4:19",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_ServiceProvider_UniSwap_ETH_DAI_Zap_$4296",
@@ -10565,7 +10565,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-12-06T10:22:27.409Z",
+  "updatedAt": "2019-12-08T12:43:45.353Z",
   "devdoc": {
     "methods": {
       "isOwner()": {

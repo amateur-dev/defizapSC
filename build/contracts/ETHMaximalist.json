@@ -697,7 +697,7 @@
                     "name": "this",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 9003,
+                    "referencedDeclaration": 9860,
                     "src": "983:4:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_ETHMaximalist_$444",
@@ -1192,10 +1192,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8976,
-                        8977
+                        9833,
+                        9834
                       ],
-                      "referencedDeclaration": 8976,
+                      "referencedDeclaration": 9833,
                       "src": "1459:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1369,7 +1369,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8973,
+                            "referencedDeclaration": 9830,
                             "src": "1753:3:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -1428,10 +1428,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8976,
-                        8977
+                        9833,
+                        9834
                       ],
-                      "referencedDeclaration": 8976,
+                      "referencedDeclaration": 9833,
                       "src": "1745:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1497,7 +1497,7 @@
                       "name": "msg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8973,
+                      "referencedDeclaration": 9830,
                       "src": "1810:3:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_magic_message",
@@ -2035,10 +2035,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8976,
-                        8977
+                        9833,
+                        9834
                       ],
-                      "referencedDeclaration": 8976,
+                      "referencedDeclaration": 9833,
                       "src": "2017:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -2075,7 +2075,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8973,
+                          "referencedDeclaration": 9830,
                           "src": "2213:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -2213,7 +2213,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8973,
+                          "referencedDeclaration": 9830,
                           "src": "2304:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -2450,7 +2450,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8973,
+                        "referencedDeclaration": 9830,
                         "src": "2480:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -2581,7 +2581,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8973,
+                        "referencedDeclaration": 9830,
                         "src": "2654:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -2759,7 +2759,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 9003,
+                              "referencedDeclaration": 9860,
                               "src": "2907:4:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_ETHMaximalist_$444",
@@ -3447,7 +3447,7 @@
                     "name": "this",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 9003,
+                    "referencedDeclaration": 9860,
                     "src": "983:4:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_ETHMaximalist_$444",
@@ -3942,10 +3942,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8976,
-                        8977
+                        9833,
+                        9834
                       ],
-                      "referencedDeclaration": 8976,
+                      "referencedDeclaration": 9833,
                       "src": "1459:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -4119,7 +4119,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8973,
+                            "referencedDeclaration": 9830,
                             "src": "1753:3:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -4178,10 +4178,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8976,
-                        8977
+                        9833,
+                        9834
                       ],
-                      "referencedDeclaration": 8976,
+                      "referencedDeclaration": 9833,
                       "src": "1745:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -4247,7 +4247,7 @@
                       "name": "msg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8973,
+                      "referencedDeclaration": 9830,
                       "src": "1810:3:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_magic_message",
@@ -4785,10 +4785,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8976,
-                        8977
+                        9833,
+                        9834
                       ],
-                      "referencedDeclaration": 8976,
+                      "referencedDeclaration": 9833,
                       "src": "2017:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -4825,7 +4825,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8973,
+                          "referencedDeclaration": 9830,
                           "src": "2213:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -4963,7 +4963,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8973,
+                          "referencedDeclaration": 9830,
                           "src": "2304:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -5200,7 +5200,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8973,
+                        "referencedDeclaration": 9830,
                         "src": "2480:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -5331,7 +5331,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8973,
+                        "referencedDeclaration": 9830,
                         "src": "2654:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -5509,7 +5509,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 9003,
+                              "referencedDeclaration": 9860,
                               "src": "2907:4:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_ETHMaximalist_$444",
@@ -5678,7 +5678,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-12-06T10:22:27.333Z",
+  "updatedAt": "2019-12-08T12:43:45.214Z",
   "devdoc": {
     "methods": {}
   },

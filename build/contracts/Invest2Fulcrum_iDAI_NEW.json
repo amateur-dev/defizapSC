@@ -2013,10 +2013,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8807,
-                        8808
+                        9833,
+                        9834
                       ],
-                      "referencedDeclaration": 8807,
+                      "referencedDeclaration": 9833,
                       "src": "2286:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -2064,7 +2064,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8804,
+                            "referencedDeclaration": 9830,
                             "src": "2341:3:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -2123,10 +2123,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8807,
-                        8808
+                        9833,
+                        9834
                       ],
-                      "referencedDeclaration": 8807,
+                      "referencedDeclaration": 9833,
                       "src": "2333:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -2266,7 +2266,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8804,
+                            "referencedDeclaration": 9830,
                             "src": "2503:3:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -2437,7 +2437,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8804,
+                            "referencedDeclaration": 9830,
                             "src": "2590:3:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -2799,10 +2799,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8807,
-                        8808
+                        9833,
+                        9834
                       ],
-                      "referencedDeclaration": 8807,
+                      "referencedDeclaration": 9833,
                       "src": "2707:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -3122,7 +3122,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8856,
+                            "referencedDeclaration": 9894,
                             "src": "3146:4:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_Invest2Fulcrum_iDAI_NEW_$2220",
@@ -3387,7 +3387,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8804,
+                        "referencedDeclaration": 9830,
                         "src": "3439:3:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -3518,7 +3518,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8804,
+                        "referencedDeclaration": 9830,
                         "src": "3613:3:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -3577,7 +3577,7 @@
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 8804,
+                                "referencedDeclaration": 9830,
                                 "src": "3703:3:8",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_message",
@@ -3731,7 +3731,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8856,
+                              "referencedDeclaration": 9894,
                               "src": "3872:4:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_Invest2Fulcrum_iDAI_NEW_$2220",
@@ -5619,10 +5619,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8807,
-                        8808
+                        9833,
+                        9834
                       ],
-                      "referencedDeclaration": 8807,
+                      "referencedDeclaration": 9833,
                       "src": "2286:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -5670,7 +5670,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8804,
+                            "referencedDeclaration": 9830,
                             "src": "2341:3:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -5729,10 +5729,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8807,
-                        8808
+                        9833,
+                        9834
                       ],
-                      "referencedDeclaration": 8807,
+                      "referencedDeclaration": 9833,
                       "src": "2333:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -5872,7 +5872,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8804,
+                            "referencedDeclaration": 9830,
                             "src": "2503:3:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -6043,7 +6043,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8804,
+                            "referencedDeclaration": 9830,
                             "src": "2590:3:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -6405,10 +6405,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8807,
-                        8808
+                        9833,
+                        9834
                       ],
-                      "referencedDeclaration": 8807,
+                      "referencedDeclaration": 9833,
                       "src": "2707:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -6728,7 +6728,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8856,
+                            "referencedDeclaration": 9894,
                             "src": "3146:4:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_Invest2Fulcrum_iDAI_NEW_$2220",
@@ -6993,7 +6993,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8804,
+                        "referencedDeclaration": 9830,
                         "src": "3439:3:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -7124,7 +7124,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8804,
+                        "referencedDeclaration": 9830,
                         "src": "3613:3:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -7183,7 +7183,7 @@
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 8804,
+                                "referencedDeclaration": 9830,
                                 "src": "3703:3:8",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_message",
@@ -7337,7 +7337,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8856,
+                              "referencedDeclaration": 9894,
                               "src": "3872:4:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_Invest2Fulcrum_iDAI_NEW_$2220",
@@ -7506,7 +7506,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-12-06T05:57:31.731Z",
+  "updatedAt": "2019-12-08T12:43:45.262Z",
   "devdoc": {
     "methods": {
       "isOwner()": {

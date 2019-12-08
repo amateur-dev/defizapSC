@@ -18,13 +18,11 @@ interface IuniswapExchange {
     function balanceOf(address _owner) external view returns (uint256);
     function transfer(address _to, uint256 _value) external returns (bool);
     function addLiquidity(uint256 min_liquidity, uint256 max_tokens, uint256 deadline) external payable returns (uint256);
-    function totalSupply() external view returns (uint256);
-    function tokenAddress() external view returns (address token);
 }
 
 
 
-contract uniswapLiquidityProviderZAP is Ownable, ReentrancyGuard {
+contract UniSwapAddLiquityV2_General is Ownable, ReentrancyGuard {
     using SafeMath for uint;
     
     // events
@@ -43,40 +41,32 @@ contract uniswapLiquidityProviderZAP is Ownable, ReentrancyGuard {
     modifier onlyInEmergency {if (stopped) _;}
     
     // - Key Addresses
-    IuniswapFactory UniSwapFactoryAddress = IuniswapFactory(0xc0a47dFe034B400B47bDaD5FecDa2621de6c4d95);
+    IuniswapFactory public UniSwapFactoryAddress = IuniswapFactory(0xc0a47dFe034B400B47bDaD5FecDa2621de6c4d95);
 
-    constructor() public {
-        // TokenContractAddress = IERC20(_tokenContractAddress);
-        // getUniSwapExchangeAddress(_tokenContractAddress);
-        // TokenContractAddress.approve(address(uniswapExchangeContract),100000000000000000000000000000);
-    }
-   
-    function LetsInvest(address _TokenContractAddress, address _towhomtoissue) public payable stopInEmergency nonReentrant returns (uint) {
-        IuniswapExchange UniSwapExchangeContractAddress = IuniswapExchange(UniSwapFactoryAddress.getExchange(_TokenContractAddress));
+    function LetsInvest(address _TokenContractAddress, address _towhomtoissue) public payable stopInEmergency returns (uint) {
         IERC20 ERC20TokenAddress = IERC20(_TokenContractAddress);
+        IuniswapExchange UniSwapExchangeContractAddress = IuniswapExchange(UniSwapFactoryAddress.getExchange(_TokenContractAddress));
+    
 
         // determining the portion of the incoming ETH to be converted to the ERC20 Token
         uint conversionPortion = SafeMath.div(SafeMath.mul(msg.value, 505), 1000);
         uint non_conversionPortion = SafeMath.sub(msg.value,conversionPortion);
 
         // coversion of ETH to the ERC20 Token
-        uint min_Tokens = SafeMath.div(SafeMath.mul((UniSwapExchangeContractAddress.getEthToTokenInputPrice(msg.value)),95),100);
+        uint min_Tokens = SafeMath.div(SafeMath.mul(UniSwapExchangeContractAddress.getEthToTokenInputPrice(conversionPortion),95),100);
         uint deadLineToConvert = SafeMath.add(now,1800);
-        UniSwapExchangeContractAddress.ethToTokenSwapInput.value(msg.value)(min_Tokens,deadLineToConvert);
+        UniSwapExchangeContractAddress.ethToTokenSwapInput.value(conversionPortion)(min_Tokens,deadLineToConvert);
         uint ERC20TokenHoldings = ERC20TokenAddress.balanceOf(address(this));
+        ERC20TokenAddress.approve(address(UniSwapExchangeContractAddress),ERC20TokenHoldings);
         require (ERC20TokenHoldings > 0, "the conversion did not happen as planned");
-        // ERC20TokenAddress.transfer(msg.sender, ERC20TokenHoldings);
         emit ERC20TokenHoldingsOnConversion(ERC20TokenHoldings);
 
 
         // adding Liquidity
-        uint contractBalance = address(UniSwapExchangeContractAddress).balance;
-        uint eth_reserve = SafeMath.sub(contractBalance, non_conversionPortion);
-        uint token_reserve = ERC20TokenAddress.balanceOf(address(UniSwapExchangeContractAddress));
-        uint token_amount = SafeMath.div(SafeMath.mul(non_conversionPortion,token_reserve),eth_reserve) + 1;
-        uint max_tokens = token_amount;
+        uint max_tokens_ans = getMaxTokens(address(UniSwapExchangeContractAddress), ERC20TokenAddress, non_conversionPortion);
         uint deadLineToAddLiquidity = SafeMath.add(now,1800);
-        UniSwapExchangeContractAddress.addLiquidity.value(non_conversionPortion)(1,max_tokens,deadLineToAddLiquidity);
+        UniSwapExchangeContractAddress.addLiquidity.value(non_conversionPortion)(1,max_tokens_ans,deadLineToAddLiquidity);
+        ERC20TokenAddress.approve(address(UniSwapExchangeContractAddress),0);
 
         // transferring Liquidity
         uint LiquityTokenHoldings = UniSwapExchangeContractAddress.balanceOf(address(this));
@@ -85,6 +75,14 @@ contract uniswapLiquidityProviderZAP is Ownable, ReentrancyGuard {
         uint residualERC20Holdings = ERC20TokenAddress.balanceOf(address(this));
         ERC20TokenAddress.transfer(_towhomtoissue, residualERC20Holdings);
         return LiquityTokenHoldings;
+    }
+
+    function getMaxTokens(address _UniSwapExchangeContractAddress, IERC20 _ERC20TokenAddress, uint _value) internal view returns (uint) {
+        uint contractBalance = address(_UniSwapExchangeContractAddress).balance;
+        uint eth_reserve = SafeMath.sub(contractBalance, _value);
+        uint token_reserve = _ERC20TokenAddress.balanceOf(_UniSwapExchangeContractAddress);
+        uint token_amount = SafeMath.div(SafeMath.mul(_value,token_reserve),eth_reserve) + 1;
+        return token_amount;
     }
 
     

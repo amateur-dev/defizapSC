@@ -697,7 +697,7 @@
                     "name": "this",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 9091,
+                    "referencedDeclaration": 9936,
                     "src": "914:4:22",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_SafeNotSorryZap_$4667",
@@ -1225,7 +1225,7 @@
                       "name": "msg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8973,
+                      "referencedDeclaration": 9830,
                       "src": "1623:3:22",
                       "typeDescriptions": {
                         "typeIdentifier": "t_magic_message",
@@ -1290,7 +1290,7 @@
                       "name": "msg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8973,
+                      "referencedDeclaration": 9830,
                       "src": "1665:3:22",
                       "typeDescriptions": {
                         "typeIdentifier": "t_magic_message",
@@ -1828,10 +1828,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8976,
-                        8977
+                        9833,
+                        9834
                       ],
-                      "referencedDeclaration": 8976,
+                      "referencedDeclaration": 9833,
                       "src": "1858:7:22",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1868,7 +1868,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8973,
+                          "referencedDeclaration": 9830,
                           "src": "2017:3:22",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -2006,7 +2006,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8973,
+                          "referencedDeclaration": 9830,
                           "src": "2106:3:22",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -2243,7 +2243,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8973,
+                        "referencedDeclaration": 9830,
                         "src": "2282:3:22",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -2374,7 +2374,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8973,
+                        "referencedDeclaration": 9830,
                         "src": "2456:3:22",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -2552,7 +2552,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 9091,
+                              "referencedDeclaration": 9936,
                               "src": "2718:4:22",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_SafeNotSorryZap_$4667",
@@ -3240,7 +3240,7 @@
                     "name": "this",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 9091,
+                    "referencedDeclaration": 9936,
                     "src": "914:4:22",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_SafeNotSorryZap_$4667",
@@ -3768,7 +3768,7 @@
                       "name": "msg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8973,
+                      "referencedDeclaration": 9830,
                       "src": "1623:3:22",
                       "typeDescriptions": {
                         "typeIdentifier": "t_magic_message",
@@ -3833,7 +3833,7 @@
                       "name": "msg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8973,
+                      "referencedDeclaration": 9830,
                       "src": "1665:3:22",
                       "typeDescriptions": {
                         "typeIdentifier": "t_magic_message",
@@ -4371,10 +4371,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8976,
-                        8977
+                        9833,
+                        9834
                       ],
-                      "referencedDeclaration": 8976,
+                      "referencedDeclaration": 9833,
                       "src": "1858:7:22",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -4411,7 +4411,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8973,
+                          "referencedDeclaration": 9830,
                           "src": "2017:3:22",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -4549,7 +4549,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8973,
+                          "referencedDeclaration": 9830,
                           "src": "2106:3:22",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -4786,7 +4786,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8973,
+                        "referencedDeclaration": 9830,
                         "src": "2282:3:22",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -4917,7 +4917,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8973,
+                        "referencedDeclaration": 9830,
                         "src": "2456:3:22",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -5095,7 +5095,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 9091,
+                              "referencedDeclaration": 9936,
                               "src": "2718:4:22",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_SafeNotSorryZap_$4667",
@@ -5264,7 +5264,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-12-06T10:22:27.315Z",
+  "updatedAt": "2019-12-08T12:43:45.206Z",
   "devdoc": {
     "methods": {}
   },
