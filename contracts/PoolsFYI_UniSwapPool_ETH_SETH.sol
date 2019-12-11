@@ -6,7 +6,7 @@ import './OpenZepplinIERC20.sol';
 import './OpenZepplinReentrancyGuard.sol';
 
 
-// Interface for ETH_SAI_Addliquidity
+// Interface for ETH_sETH_Addliquidity
 interface UniSwap_Zap_Contract{
     function LetsInvest() external payable;
 }
@@ -23,8 +23,8 @@ contract ServiceProvider_UniSwap_Zap is Ownable, ReentrancyGuard {
     using SafeMath for uint;
 
     UniSwap_Zap_Contract public UniSwap_Zap_ContractAddress;
-    IERC20 public SAI_TokenContractAddress;
-    IERC20 public UniSwapSAIExchangeContractAddress;
+    IERC20 public sETH_TokenContractAddress;
+    IERC20 public UniSwapsETHExchangeContractAddress;
     
     address internal ServiceProviderAddress;
 
@@ -32,18 +32,18 @@ contract ServiceProvider_UniSwap_Zap is Ownable, ReentrancyGuard {
     uint private TotalServiceChargeTokens;
     uint private serviceChargeInBasisPoints = 0;
     
-    event TransferredToUser_liquidityTokens_residualSAI(uint, uint);
+    event TransferredToUser_liquidityTokens_residualsETH(uint, uint);
     event ServiceChargeTokensTransferred(uint);
 
     constructor (
         UniSwap_Zap_Contract _UniSwap_Zap_ContractAddress, 
-        IERC20 _SAI_TokenContractAddress, 
-        IERC20 _UniSwapSAIExchangeContractAddress, 
+        IERC20 _sETH_TokenContractAddress, 
+        IERC20 _UniSwapsETHExchangeContractAddress, 
         address _ServiceProviderAddress) 
         public {
         UniSwap_Zap_ContractAddress = _UniSwap_Zap_ContractAddress;
-        SAI_TokenContractAddress = _SAI_TokenContractAddress;
-        UniSwapSAIExchangeContractAddress = _UniSwapSAIExchangeContractAddress;
+        sETH_TokenContractAddress = _sETH_TokenContractAddress;
+        UniSwapsETHExchangeContractAddress = _UniSwapsETHExchangeContractAddress;
         ServiceProviderAddress = _ServiceProviderAddress;
     }
 
@@ -64,14 +64,14 @@ contract ServiceProvider_UniSwap_Zap is Ownable, ReentrancyGuard {
         UniSwap_Zap_ContractAddress = _new_UniSwap_Zap_ContractAddress;
     }
   
-    // should we ever want to change the address of the SAI_TOKEN_ADDRESS Contract
-    function set_SAI_TokenContractAddress (IERC20 _new_SAI_TokenContractAddress) public onlyOwner {
-        SAI_TokenContractAddress = _new_SAI_TokenContractAddress;
+    // should we ever want to change the address of the sETH_TOKEN_ADDRESS Contract
+    function set_sETH_TokenContractAddress (IERC20 _new_sETH_TokenContractAddress) public onlyOwner {
+        sETH_TokenContractAddress = _new_sETH_TokenContractAddress;
     }
 
-    // should we ever want to change the address of the _UniSwap SAIExchange Contract Address
-    function set_UniSwapSAIExchangeContractAddress (IERC20 _new_UniSwapSAIExchangeContractAddress) public onlyOwner {
-        UniSwapSAIExchangeContractAddress = _new_UniSwapSAIExchangeContractAddress;
+    // should we ever want to change the address of the _UniSwap sETHExchange Contract Address
+    function set_UniSwapsETHExchangeContractAddress (IERC20 _new_UniSwapsETHExchangeContractAddress) public onlyOwner {
+        UniSwapsETHExchangeContractAddress = _new_UniSwapsETHExchangeContractAddress;
     }
 
  
@@ -101,20 +101,20 @@ contract ServiceProvider_UniSwap_Zap is Ownable, ReentrancyGuard {
         UniSwap_Zap_ContractAddress.LetsInvest.value(msg.value)();
         
 
-        // finding out the UniTokens received and the residual SAI Tokens Received
-        uint SAILiquidityTokens = UniSwapSAIExchangeContractAddress.balanceOf(address(this));
-        uint residualSAIHoldings = SAI_TokenContractAddress.balanceOf(address(this));
+        // finding out the UniTokens received and the residual sETH Tokens Received
+        uint sETHLiquidityTokens = UniSwapsETHExchangeContractAddress.balanceOf(address(this));
+        uint residualsETHHoldings = sETH_TokenContractAddress.balanceOf(address(this));
 
         // Adjusting for ServiceCharge
-        uint ServiceChargeTokens = SafeMath.div(SafeMath.mul(SAILiquidityTokens,serviceChargeInBasisPoints),10000);
+        uint ServiceChargeTokens = SafeMath.div(SafeMath.mul(sETHLiquidityTokens,serviceChargeInBasisPoints),10000);
         TotalServiceChargeTokens = TotalServiceChargeTokens + ServiceChargeTokens;
         
 
-        // Sending Back the Balance LiquityTokens and residual SAI Tokens to user
-        uint UserLiquidityTokens = SafeMath.sub(SAILiquidityTokens,ServiceChargeTokens);
-        require(UniSwapSAIExchangeContractAddress.transfer(msg.sender, UserLiquidityTokens), "Failure to send Liquidity Tokens to User");
-        require(SAI_TokenContractAddress.transfer(msg.sender, residualSAIHoldings), "Failure to send residual SAI holdings");
-        emit TransferredToUser_liquidityTokens_residualSAI(UserLiquidityTokens, residualSAIHoldings);
+        // Sending Back the Balance LiquityTokens and residual sETH Tokens to user
+        uint UserLiquidityTokens = SafeMath.sub(sETHLiquidityTokens,ServiceChargeTokens);
+        require(UniSwapsETHExchangeContractAddress.transfer(msg.sender, UserLiquidityTokens), "Failure to send Liquidity Tokens to User");
+        require(sETH_TokenContractAddress.transfer(msg.sender, residualsETHHoldings), "Failure to send residual sETH holdings");
+        emit TransferredToUser_liquidityTokens_residualsETH(UserLiquidityTokens, residualsETHHoldings);
         return true;
     }
 
@@ -128,7 +128,7 @@ contract ServiceProvider_UniSwap_Zap is Ownable, ReentrancyGuard {
     function withdrawServiceChargeTokens(uint _amountInUnits) public onlyOwner {
         require(_amountInUnits <= TotalServiceChargeTokens, "You are asking for more than what you have earned");
         TotalServiceChargeTokens = SafeMath.sub(TotalServiceChargeTokens,_amountInUnits);
-        require(UniSwapSAIExchangeContractAddress.transfer(ServiceProviderAddress, _amountInUnits), "Failure to send ServiceChargeTokens");
+        require(UniSwapsETHExchangeContractAddress.transfer(ServiceProviderAddress, _amountInUnits), "Failure to send ServiceChargeTokens");
         emit ServiceChargeTokensTransferred(_amountInUnits);
     }
 
@@ -141,14 +141,14 @@ contract ServiceProvider_UniSwap_Zap is Ownable, ReentrancyGuard {
     
 
     // incase of half-way error
-    function withdrawSAI() public onlyOwner {
-        uint StuckSAIHoldings = SAI_TokenContractAddress.balanceOf(address(this));
-        SAI_TokenContractAddress.transfer(_owner, StuckSAIHoldings);
+    function withdrawsETH() public onlyOwner {
+        uint StucksETHHoldings = sETH_TokenContractAddress.balanceOf(address(this));
+        sETH_TokenContractAddress.transfer(_owner, StucksETHHoldings);
     }
     
-    function withdrawSAILiquityTokens() public onlyOwner {
-        uint StuckSAILiquityTokens = UniSwapSAIExchangeContractAddress.balanceOf(address(this));
-        UniSwapSAIExchangeContractAddress.transfer(_owner, StuckSAILiquityTokens);
+    function withdrawsETHLiquityTokens() public onlyOwner {
+        uint StucksETHLiquityTokens = UniSwapsETHExchangeContractAddress.balanceOf(address(this));
+        UniSwapsETHExchangeContractAddress.transfer(_owner, StucksETHLiquityTokens);
     }
 
     
