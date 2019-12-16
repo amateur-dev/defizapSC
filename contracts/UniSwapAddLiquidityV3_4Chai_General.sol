@@ -43,7 +43,7 @@ contract UniSwapAddLiquityV2_General is Ownable, ReentrancyGuard {
     // - Key Addresses
     IuniswapFactory public UniSwapFactoryAddress = IuniswapFactory(0xc0a47dFe034B400B47bDaD5FecDa2621de6c4d95);
 
-    function LetsInvest(address _TokenContractAddress, address _towhomtoissue) public payable stopInEmergency returns (uint) {
+    function LetsInvest(address _TokenContractAddress, address _towhomtoissue, uint8 _value) public payable stopInEmergency returns (uint) {
         IERC20 ERC20TokenAddress = IERC20(_TokenContractAddress);
         IuniswapExchange UniSwapExchangeContractAddress = IuniswapExchange(UniSwapFactoryAddress.getExchange(_TokenContractAddress));
     
@@ -53,7 +53,7 @@ contract UniSwapAddLiquityV2_General is Ownable, ReentrancyGuard {
         uint non_conversionPortion = SafeMath.sub(msg.value,conversionPortion);
 
         // coversion of ETH to the ERC20 Token
-        uint min_Tokens = SafeMath.div(SafeMath.mul(UniSwapExchangeContractAddress.getEthToTokenInputPrice(conversionPortion),95),100);
+        uint min_Tokens = SafeMath.div(SafeMath.mul(UniSwapExchangeContractAddress.getEthToTokenInputPrice(conversionPortion),_value),1000);
         uint deadLineToConvert = SafeMath.add(now,1800);
         UniSwapExchangeContractAddress.ethToTokenSwapInput.value(conversionPortion)(min_Tokens,deadLineToConvert);
         uint ERC20TokenHoldings = ERC20TokenAddress.balanceOf(address(this));
@@ -113,10 +113,6 @@ contract UniSwapAddLiquityV2_General is Ownable, ReentrancyGuard {
     // - to withdraw any ETH balance sitting in the contract
     function withdraw() public onlyOwner {
         _owner.transfer(address(this).balance);
-    }
-    
-    function _destruct() public onlyOwner {
-        selfdestruct(_owner);
     }
     
 }
