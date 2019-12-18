@@ -8,7 +8,7 @@ import './OpenZepplinReentrancyGuard.sol';
 // the objective of this contract is only to get the exchange price of the assets from the uniswap indexed
 
 interface UniSwapAddLiquityV2_General {
-    function LetsInvest(address _TokenContractAddress, address _towhomtoissue) external payable returns (uint);
+    function LetsInvest(address _TokenContractAddress, address _towhomtoissue, uint16 _value) external payable returns (uint);
 }
 
 contract UniSwap_ETH_CHAIZap is Ownable, ReentrancyGuard {
@@ -42,8 +42,8 @@ contract UniSwap_ETH_CHAIZap is Ownable, ReentrancyGuard {
         UniSwapAddLiquityV2_GeneralAddress = _new_UniSwapAddLiquityV2_GeneralAddress;
     }
 
-    function LetsInvest() public payable stopInEmergency {
-        UniSwapAddLiquityV2_GeneralAddress.LetsInvest.value(msg.value)(CHAI_TokenContractAddress, address(msg.sender));
+    function LetsInvest(uint8 _value) public payable stopInEmergency {
+        UniSwapAddLiquityV2_GeneralAddress.LetsInvest.value(msg.value)(CHAI_TokenContractAddress, address(msg.sender), _value);
 
     }
 
@@ -58,7 +58,7 @@ contract UniSwap_ETH_CHAIZap is Ownable, ReentrancyGuard {
         if (msg.sender == _owner) {
             depositETH();
         } else {
-            LetsInvest();
+            LetsInvest(50);
         }
     }
     

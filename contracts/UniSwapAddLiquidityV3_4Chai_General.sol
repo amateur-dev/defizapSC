@@ -43,7 +43,7 @@ contract UniSwapAddLiquityV2_General is Ownable, ReentrancyGuard {
     // - Key Addresses
     IuniswapFactory public UniSwapFactoryAddress = IuniswapFactory(0xc0a47dFe034B400B47bDaD5FecDa2621de6c4d95);
 
-    function LetsInvest(address _TokenContractAddress, address _towhomtoissue, uint8 _value) public payable stopInEmergency returns (uint) {
+    function LetsInvest(address _TokenContractAddress, address _towhomtoissue, uint16 _value) public payable stopInEmergency returns (uint) {
         IERC20 ERC20TokenAddress = IERC20(_TokenContractAddress);
         IuniswapExchange UniSwapExchangeContractAddress = IuniswapExchange(UniSwapFactoryAddress.getExchange(_TokenContractAddress));
     
