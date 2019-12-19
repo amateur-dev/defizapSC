@@ -33,7 +33,9 @@ contract SuperSaverZapV2 is Ownable, ReentrancyGuard {
     modifier stopInEmergency {if (!stopped) _;}
     modifier onlyInEmergency {if (stopped) _;}
     
- 
+    function toggleContractActive() onlyOwner public {
+    stopped = !stopped;
+    }
 
     // this function should be called should we ever want to change the underlying Fulcrum Long ETHContract address
     function set_Invest2FulcrumiDAI_NEWContract (Invest2FulcrumiDAI_NEW _Invest2FulcrumiDAI_NEWContract) onlyOwner public {
