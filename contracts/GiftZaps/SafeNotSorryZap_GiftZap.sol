@@ -15,7 +15,7 @@ interface Invest2Fulcrum {
 
 
 // through this contract we are putting 90% allocation to cDAI and 10% to 2xLongETH
-contract SafeNotSorryZap is Ownable, ReentrancyGuard {
+contract SafeNotSorryZapv2_SAI is Ownable, ReentrancyGuard {
     using SafeMath for uint;
     
     // state variables
