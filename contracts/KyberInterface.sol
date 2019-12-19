@@ -31,27 +31,41 @@ contract KyberInterace is Ownable {
     // - setting up Imp Contract Addresses
     IKyberNetworkProxy public kyberNetworkProxyContract = IKyberNetworkProxy(0x818E6FECD516Ecc3849DAf6845e3EC868087B755);
     ERC20 constant public ETH_TOKEN_ADDRESS = ERC20(0x00eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee);
+    address private _wallet;
 
     
     // - variable for tracking the ETH balance of this contract
     uint public balance;
     
     // events
-    event UnitsTransferred(uint, uint);
+    event TokensReceived(uint, uint);
 
     // this function should be called should we ever want to change the kyberNetworkProxyContract address
     function set_kyberNetworkProxyContract(IKyberNetworkProxy _kyberNetworkProxyContract) onlyOwner public {
         kyberNetworkProxyContract = _kyberNetworkProxyContract;
     }
     
-    // 
-    function swap(ERC20 _TokenAddress) public payable {
+    
+    function set_wallet (address _new_wallet) public onlyOwner {
+        _wallet = _new_wallet;
+    }
+    
+    function get_wallet() public view onlyOwner returns (address) {
+        return _wallet;
+    }
+     
+    function swapETHtoToken(ERC20 _TokenAddress, uint _slippageValue) public payable returns (uint) {
+        require(_wallet != address(0));
+        require(_slippageValue < 100 && _slippageValue >= 0);
         uint minConversionRate;
         uint slippageRate;
         (minConversionRate,slippageRate) = kyberNetworkProxyContract.getExpectedRate(ETH_TOKEN_ADDRESS, _TokenAddress, msg.value);
-        uint destAmount = kyberNetworkProxyContract.trade.value(msg.value)(ETH_TOKEN_ADDRESS, msg.value, _TokenAddress, msg.sender, 2**255, slippageRate, address(0x19627796b318E27C333530aD67c464Cfc37596ec));
-        emit UnitsTransferred(minConversionRate, destAmount);
+        uint realisedValue = SafeMath.sub(100,_slippageValue);
+        uint destAmount = kyberNetworkProxyContract.trade.value(msg.value)(ETH_TOKEN_ADDRESS, msg.value, _TokenAddress, msg.sender, 2**255, (SafeMath.div(SafeMath.mul(minConversionRate,realisedValue),100)), _wallet);
+        return destAmount;
     }
+    
+
     
     // fx, in case something goes wrong {hint! learnt from experience}
     function inCaseTokengetsStuck(ERC20 _TokenAddress) onlyOwner public {

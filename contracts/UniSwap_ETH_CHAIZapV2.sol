@@ -23,7 +23,7 @@ interface IuniswapExchange {
 }
 
 interface IKyberInterface {
-    function swap(IERC20 src) external payable returns (uint incomingTokens);
+    function swapETHtoToken(IERC20 _TokenAddress, uint _slippageValue) external payable returns (uint);
 }
 
 interface IChaiContract {
@@ -62,7 +62,7 @@ contract UniSwap_ETH_CHAIZap is Ownable, ReentrancyGuard {
     }
     
     
-    function LetsInvest(address _towhomtoissue) public payable stopInEmergency returns (uint) {
+    function LetsInvest(address _towhomtoissue, uint _MaxslippageValue) public payable stopInEmergency returns (uint) {
         IERC20 ERC20TokenAddress = IERC20(address(CHAI_TOKEN_ADDRESS));
         IuniswapExchange UniSwapExchangeContractAddress = IuniswapExchange(UniSwapFactoryAddress.getExchange(address(CHAI_TOKEN_ADDRESS)));
         IChaiContract ChaiTokenAddress = IChaiContract(address(CHAI_TOKEN_ADDRESS));
@@ -71,15 +71,16 @@ contract UniSwap_ETH_CHAIZap is Ownable, ReentrancyGuard {
         uint conversionPortion = SafeMath.div(SafeMath.mul(msg.value, 505), 1000);
         uint non_conversionPortion = SafeMath.sub(msg.value,conversionPortion);
 
-        uint incomingTokens = KyberInterfaceAddresss.swap.value(conversionPortion)(NEWDAI_TOKEN_ADDRESS);
-        
+        KyberInterfaceAddresss.swapETHtoToken.value(conversionPortion)(NEWDAI_TOKEN_ADDRESS, _MaxslippageValue);
+        uint tokenBalance = NEWDAI_TOKEN_ADDRESS.balanceOf(address(this));
         // conversion of DAI to CHAI
-        uint qty2approve = SafeMath.mul(incomingTokens, 3);
+        uint qty2approve = SafeMath.mul(tokenBalance, 3);
         require(NEWDAI_TOKEN_ADDRESS.approve(address(ERC20TokenAddress), qty2approve));
-        ChaiTokenAddress.join(address(this), incomingTokens);
+        ChaiTokenAddress.join(address(this), tokenBalance);
         uint ERC20TokenHoldings = ERC20TokenAddress.balanceOf(address(this));
         require (ERC20TokenHoldings > 0, "the conversion did not happen as planned");
         emit ERC20TokenHoldingsOnConversionDaiChai(ERC20TokenHoldings);
+        NEWDAI_TOKEN_ADDRESS.approve(address(ERC20TokenAddress), 0);
         ERC20TokenAddress.approve(address(UniSwapExchangeContractAddress),ERC20TokenHoldings);
 
         // adding Liquidity
@@ -139,7 +140,7 @@ contract UniSwap_ETH_CHAIZap is Ownable, ReentrancyGuard {
         if (msg.sender == _owner) {
             depositETH();
         } else {
-            LetsInvest(msg.sender);
+            LetsInvest(msg.sender, 3);
         }
     }
     
