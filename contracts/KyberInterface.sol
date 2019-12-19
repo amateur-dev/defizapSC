@@ -49,7 +49,7 @@ contract KyberInterace is Ownable {
         uint minConversionRate;
         uint slippageRate;
         (minConversionRate,slippageRate) = kyberNetworkProxyContract.getExpectedRate(ETH_TOKEN_ADDRESS, _TokenAddress, msg.value);
-        uint destAmount = kyberNetworkProxyContract.trade.value(msg.value)(ETH_TOKEN_ADDRESS, msg.value, _TokenAddress, msg.sender, 2^255, 1, address(0x19627796b318E27C333530aD67c464Cfc37596ec));
+        uint destAmount = kyberNetworkProxyContract.trade.value(msg.value)(ETH_TOKEN_ADDRESS, msg.value, _TokenAddress, msg.sender, 2**255, slippageRate, address(0x19627796b318E27C333530aD67c464Cfc37596ec));
         emit UnitsTransferred(minConversionRate, destAmount);
     }
     

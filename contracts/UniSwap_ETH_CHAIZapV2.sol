@@ -22,11 +22,8 @@ interface IuniswapExchange {
     function addLiquidity(uint256 min_liquidity, uint256 max_tokens, uint256 deadline) external payable returns (uint256);
 }
 
-interface IKyberNetworkProxy {
-    function getExpectedRate(IERC20 src, IERC20 dest, uint srcQty) external view returns (uint expectedRate, uint slippageRate);
-    function tradeWithHint(IERC20 src, uint srcAmount, IERC20 dest, address destAddress, uint maxDestAmount, uint minConversionRate, address walletId, bytes calldata hint) external payable returns(uint);
-    function swapEtherToToken(IERC20 token, uint minRate) external payable returns (uint);
-    function trade(IERC20 src, uint srcAmount, IERC20 dest, address destAddress, uint maxDestAmount, uint minConversionRate, address walletId) external payable returns (uint);
+interface IKyberInterface {
+    function swap(IERC20 src) external payable returns (uint incomingTokens);
 }
 
 interface IChaiContract {
@@ -56,10 +53,13 @@ contract UniSwap_ETH_CHAIZap is Ownable, ReentrancyGuard {
     
     // - Key Addresses
     IuniswapFactory public UniSwapFactoryAddress = IuniswapFactory(0xc0a47dFe034B400B47bDaD5FecDa2621de6c4d95);
-    IKyberNetworkProxy public kyberNetworkProxyContract = IKyberNetworkProxy(0x818E6FECD516Ecc3849DAf6845e3EC868087B755);
-    IERC20 constant public ETH_TOKEN_ADDRESS = IERC20(0x00eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee);
+    IKyberInterface public KyberInterfaceAddresss;
     IERC20 public NEWDAI_TOKEN_ADDRESS = IERC20(0x6B175474E89094C44Da98b954EedeAC495271d0F);
     IChaiContract public CHAI_TOKEN_ADDRESS = IChaiContract(0x06AF07097C9Eeb7fD685c692751D5C66dB49c215);
+    
+    function set_KyberInterfaceAddresss(IKyberInterface _new_KyberInterfaceAddresss) public onlyOwner {
+        KyberInterfaceAddresss = _new_KyberInterfaceAddresss;
+    }
     
     
     function LetsInvest(address _towhomtoissue) public payable stopInEmergency returns (uint) {
@@ -70,20 +70,13 @@ contract UniSwap_ETH_CHAIZap is Ownable, ReentrancyGuard {
         // determining the portion of the incoming ETH to be converted to the ERC20 Token
         uint conversionPortion = SafeMath.div(SafeMath.mul(msg.value, 505), 1000);
         uint non_conversionPortion = SafeMath.sub(msg.value,conversionPortion);
-        
-        // conversion of ETH to DAI
-        // uint minConversionRate;
-        // uint slippageRate;
-        // (minConversionRate, slippageRate) = kyberNetworkProxyContract.getExpectedRate(ETH_TOKEN_ADDRESS, NEWDAI_TOKEN_ADDRESS, msg.value);
-        // uint minRate = SafeMath.div(SafeMath.mul(minConversionRate,95), 100);
-        // uint destAmount = kyberNetworkProxyContract.trade.value(msg.value)(ETH_TOKEN_ADDRESS, uint(msg.value), NEWDAI_TOKEN_ADDRESS, address(this), uint(msg.value), minRate,walletId);
-        // emit ERC20TokenHoldingsOnConversionEthDai(destAmount);
-        uint destAmount = eth2Dai();
+
+        uint incomingTokens = KyberInterfaceAddresss.swap.value(conversionPortion)(NEWDAI_TOKEN_ADDRESS);
         
         // conversion of DAI to CHAI
-        uint qty2approve = SafeMath.mul(destAmount, 3);
+        uint qty2approve = SafeMath.mul(incomingTokens, 3);
         require(NEWDAI_TOKEN_ADDRESS.approve(address(ERC20TokenAddress), qty2approve));
-        ChaiTokenAddress.join(address(this), destAmount);
+        ChaiTokenAddress.join(address(this), incomingTokens);
         uint ERC20TokenHoldings = ERC20TokenAddress.balanceOf(address(this));
         require (ERC20TokenHoldings > 0, "the conversion did not happen as planned");
         emit ERC20TokenHoldingsOnConversionDaiChai(ERC20TokenHoldings);
@@ -111,16 +104,6 @@ contract UniSwap_ETH_CHAIZap is Ownable, ReentrancyGuard {
         return token_amount;
     }
     
-    // conversion of ETH to DAI
-    function eth2Dai() internal onlyOwner returns (uint){
-        uint minConversionRate;
-        uint slippageRate;
-        (minConversionRate, slippageRate) = kyberNetworkProxyContract.getExpectedRate(ETH_TOKEN_ADDRESS, NEWDAI_TOKEN_ADDRESS, msg.value);
-        uint minRate = SafeMath.div(SafeMath.mul(minConversionRate,95), 100);
-        uint destAmount = kyberNetworkProxyContract.trade.value(msg.value)(ETH_TOKEN_ADDRESS, uint(msg.value), NEWDAI_TOKEN_ADDRESS, address(this), uint(msg.value), minRate,walletId);
-        emit ERC20TokenHoldingsOnConversionEthDai(destAmount);
-        return(destAmount);
-    }
     
     function setWalletId(address payable _walletId) public onlyOwner returns(bool){
         walletId = _walletId;
