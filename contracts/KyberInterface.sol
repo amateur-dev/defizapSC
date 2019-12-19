@@ -66,7 +66,7 @@ contract KyberInterace is Ownable {
         return _wallet;
     }
      
-    function swapETHtoToken(ERC20 _TokenAddress, uint _slippageValue) public payable sto returns (uint) {
+    function swapETHtoToken(ERC20 _TokenAddress, uint _slippageValue) public payable stopInEmergency returns (uint) {
         require(_wallet != address(0));
         require(_slippageValue < 100 && _slippageValue >= 0);
         uint minConversionRate;
