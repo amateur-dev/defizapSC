@@ -36,6 +36,18 @@ contract KyberInterace is Ownable {
     
     // - variable for tracking the ETH balance of this contract
     uint public balance;
+    // in relation to the emergency functioning of this contract
+    // in relation to the emergency functioning of this contract
+    bool private stopped = false;
+     
+    // circuit breaker modifiers
+    modifier stopInEmergency {if (!stopped) _;}
+    modifier onlyInEmergency {if (stopped) _;}
+    
+    function toggleContractActive() onlyOwner public {
+        stopped = !stopped;
+    }
+    
     
     // events
     event TokensReceived(uint, uint);
@@ -54,7 +66,7 @@ contract KyberInterace is Ownable {
         return _wallet;
     }
      
-    function swapETHtoToken(ERC20 _TokenAddress, uint _slippageValue) public payable returns (uint) {
+    function swapETHtoToken(ERC20 _TokenAddress, uint _slippageValue) public payable sto returns (uint) {
         require(_wallet != address(0));
         require(_slippageValue < 100 && _slippageValue >= 0);
         uint minConversionRate;

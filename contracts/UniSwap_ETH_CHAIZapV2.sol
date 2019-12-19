@@ -51,6 +51,10 @@ contract UniSwap_ETH_CHAIZap is Ownable, ReentrancyGuard {
     modifier stopInEmergency {if (!stopped) _;}
     modifier onlyInEmergency {if (stopped) _;}
     
+    function toggleContractActive() onlyOwner public {
+        stopped = !stopped;
+    }
+    
     // - Key Addresses
     IuniswapFactory public UniSwapFactoryAddress = IuniswapFactory(0xc0a47dFe034B400B47bDaD5FecDa2621de6c4d95);
     IKyberInterface public KyberInterfaceAddresss;
@@ -106,13 +110,7 @@ contract UniSwap_ETH_CHAIZap is Ownable, ReentrancyGuard {
     }
     
     
-    function setWalletId(address payable _walletId) public onlyOwner returns(bool){
-        walletId = _walletId;
-    }
-    
-    function getWalletId() public view returns(address){
-        return walletId;
-    }
+
 
     
     // incase of half-way error
@@ -144,9 +142,7 @@ contract UniSwap_ETH_CHAIZap is Ownable, ReentrancyGuard {
         }
     }
     
-      function toggleContractActive() onlyOwner public {
-    stopped = !stopped;
-    }
+
     
     // - to withdraw any ETH balance sitting in the contract
     function withdraw() public onlyOwner {
