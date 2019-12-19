@@ -42,7 +42,7 @@ contract UniSwap_ETH_CHAIZap is Ownable, ReentrancyGuard {
     
     // state variables
     uint public balance = address(this).balance;
-    address payable private walletId = 0x19627796b318E27C333530aD67c464Cfc37596ec;
+    
 
     // in relation to the emergency functioning of this contract
     bool private stopped = false;
