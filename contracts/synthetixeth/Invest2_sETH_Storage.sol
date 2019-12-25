@@ -8,5 +8,4 @@ contract Invest2_sETH_Storage {
     address public synthDepotInterfaceContractAddress = 0x172E09691DfBbC035E37c73B62095caa16Ee2388;
     address public synthProxyInterfaceContractAddress = 0xC011A72400E58ecD99Ee497CF89E3775d4bd732F;
     address public sETHContractAddress = 0x5e74C9036fb86BD7eCdcb084a0673EFc32eA31cb;
-    uint256[] resultArray;
 }
