@@ -1,5 +1,5 @@
 ![UML Diagram](./defizapSC.svg) 
 
 <a>
-  <img src="./defizapSC.svg" width="1000%" height="1000%">
+  <img src="./defizapSC.svg" width="2000%" height="2000%">
 </a>
